@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            column-gap: 10px;
+            width: 100%;
+            margin: auto;
+        }
+        #container>div{
+            border: 1px solid rgb(232, 218, 218);
+        }
+        #container>div>p{
+           width: 60%;
+           margin: auto;
+           padding-left: 20px;
+           margin-bottom: 10px;
+        }
+        #container>div:nth-child(2)>p{
+           width: 40%;
+           margin: auto;
+           padding-left: 20px;
+           margin-bottom: 10px;
+        }
+        #container1{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            column-gap: 10px;
+            width: 100%;
+            margin: auto;
+        }
+        #container1>div{
+            border: 1px solid rgb(232, 218, 218);
+        }
+        #container1>div>p{
+           width: 100%;
+           margin: auto;
+           padding-left: 10px;
+           margin-bottom: 10px;
+        }
+       
+        #container1>div>p+p+p{
+           width: 100%;
+           margin: auto;
+           padding-left: 10px;
+           margin-bottom: 10px;
+           color: red;
+        }
+         #container2{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+           column-gap: 10px;
+        }
+        #container2>div>img{
+            width: 100%;
+        }
+         #container2>div{
+            border: 1px solid rgb(224, 214, 214);
+        }
+        #container2>div>p{
+           width: 100%;
+           margin: auto;
+           padding-left: 10px;
+           margin-bottom: 10px;
+        }
+      #Container+img{
+        display: grid;
+        justify-content: row-end;
+        width: 80%;
+        margin-right: 0px;
+        height: 500px;
+        margin: auto;
+       }
+        #container2>div>p+p{
+           width: 100%;
+           margin: auto;
+           padding-left: 10px;
+           margin-bottom: 10px;
+           color: red;
+        }
+        button{
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           background-color: rgb(255, 89, 0);
+           color: black;
+           font-weight: bold;
+           font-size: 20px;
+        }
+        #Container{
+            border: 2px solid red;
+            width: 100%;
+            height: 40px;
+            background-color: #ffda00;
+        }
+        #category{
+           display: flex;
+        }
+        #category>h3{
+            width: 20%;
+            margin-top: 0px;
+          text-align: center;
+          padding-top: 10px;
+        }
+        #category>h3:nth-child(1){
+            background-color: black;
+            height: 100%;
+            color: white;
+            padding-bottom: 10px;
+        }
+            </style>
+</head>
+<body>
+    <div id="Container">
+        <div id="category">
+            <h3>Category</h3>
+        <h3>Super Deals</h3>
+        <h3>App Only</h3>
+        <h3>New Arrival</h3>
+       </div>
+    </div>
+    <img src="https://uidesign.gbtcdn.com/GB/image/8823/Father1190X420en.jpg?imbypass=true" alt="">
+    <h3>COLLECTION</h3>
+    <div id="container"></div>
+    <h3>SUPER DEALS</h3>
+    <div id="container1"></div>
+    <h2>RECOMMENDED FOR YOU</h2>
+    <div id="container2"></div>
+</body>
+<script>
+    let arr=[
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6507287161137004544/16430/goods_thumb_220-v3/e7514f266988.jpg",
+            para:"Asseo Go Store"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16519/goods_thumb_220-v1/e9c161b9300d.jpg",
+            para:"Sky Store"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6900746726869757952/16492/goods_thumb_220-v3/0331f75f74f0.jpg",
+            para:"Xiaomi Laptop & Pad"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878399324569661440/16517/goods_thumb_220-v1/a00cb9f65d8f.jpg",
+            para:"Tronxy 3D Printer"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6899292126182567936/16486/goods_thumb_220-v1/5da6abee6198.jpg",
+            para:"Partaker Mini PC"
+        },
+    ];
+    let arr1=[
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16420/goods_thumb_220-v3/d5477f83e8f5.jpg",
+            para:"360 Rotating Flying Ball Globe Shape Magic",
+            disprice:"RRP:$24.43",
+            price:"$17.99",
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16486/goods_thumb_220-v1/d68f68d9b088.jpg",
+            para:"KINGROON KP3S 3D Printer High Precision",
+            disprice:"RRP:$339",
+            price:"$159",
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6701436345185419264/16409/goods_thumb_220-v1/335a2035c571.jpg",
+            para:"T6 LED Bicycle Light Front USB Rechargeable MTB",
+            disprice:"RRP:$19.99",
+            price:"$15.99",
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16433/goods_thumb_220-v1/eba1ad7b3fd7.jpg",
+            para:"FLSUN Q5 3D Printer 32Bit Mainboard Titan Extrude",
+            disprice:"RRP:$299.99",
+            price:"$229.00",
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16481/goods_thumb_220-v1/75a3326fa0e3.jpg",
+            para:"Lenovo HX106 Bluetooth Earphone Pro Ear Hook",
+            disprice:"RRP:$22.50",
+            price:"$15.75",
+        },
+    ]
+    arr2=[
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16534/goods_img-v1/ed230b4b2700.jpg",
+            para:"Original Xiaomi Mi Band 7/7 NFC Snart Wristband 1.62 inch",
+            price:"$48.99",
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6926471294045319168/16529/goods_img-v1/8ad475fc01f3.jpg",
+            para:"WT09 Active Noise Cancelling Headphones Bluetooth 5.1",
+            price:"$32.85"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6878400698325856256/16419/goods_img-v1/22549f61229b.jpg",
+            para:"Original Xiaomi Smart Magic Cube Bluetooth 3D Dynamic",
+            price:"$19.99"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16539/goods_img-v1/7a6e1bdf0f46.jpg",
+            para:"Hayiou RS4 smart watches Globa; version Blood oxygen",
+            price:"$49.99"
+        },
+        {
+            img:"https://gloimg.gbtcdn.com/soa/gb/item/6896502277952172032/16460/goods_img-v3/5b9d1b9f7836.jpg",
+            para:"ENGWE Bike C20 PRO Adult Electric Bike 36V19.2 AH",
+            price:"$1000.00"
+        },
+        { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img-v1/126354806df6.jpg",
+      para:"Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen For Office Signing Pens Smooth Switzerland Refill Mikuni For School Pen - Black China 1 PCS",
+      price:"$2.59"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img_big-v5/6233d35f6f8a.jpg",
+      para:"Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone Unlocked 2022 5G Mobile Phones Cheap Android Xaiomi Telephone Xiomi - Black 16G 512GB",
+      price:"$107.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16545/goods_img_big-v3/49bbbbea2c5b.jpg",
+      para:"Xiaomi Fan 2 Smart Standing double layer fan blade Portable rechargeable Dual natural wind Intelligent Mihome app control DC inverter motor - White Germany",
+      price:"$69.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16488/goods_img_big-v3/d238ad6a3d2a.jpg",
+      para:"2022 New Smartphone 7.3 Inch MIX4 72MP Camera Unlock Mobile Phones Celular Cellphone Qualcomm 888+ - Black 4GB 128GB",
+      price:"$114.30"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_img_big-v3/31d0d9d6c843.jpg",
+      para:"A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision Wireless Remote Monitor Mini Camera - Black - China Black",
+      price:"$10.68"   
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16519/goods_img-v1/ad5af71dbbf9.jpg",
+      para:"WalkingPad R2 Treadmill Smart APP LED Touch Panel Remote Control Running-Walking Mode - Black Poland",
+      price:"$585.00"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16488/goods_img-v1/78ad914ae7ca.jpg",
+      para:"4-color TFT screen Finger Clip Type Oximeter Pulse Oximetry Monitor - White",
+      price:"$8.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img_big-v3/a06e3d5ad873.jpg",
+      para:"Original Xiaomi Backpack 7L/10L/15L/20L Travel Light Weight Small Size Backpack Unisex Urban Casual Sports Chest Pack Bags - Black China 20L",
+      price:"$13.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16488/goods_img_big-v5/b1790ebe72cd.jpg",
+      para:"Xiaomi Redmi Buds 3 Lite TWS Bluetooth 5.2 Earphone Headset IP54 18 Hours Battery Life Mi Ture Wireless Earbuds 3 Youth Edition - Redmi Buds 3 Lite",
+      price:"$20.86"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16531/goods_img_big-v1/ea9ddbe7643e.jpg",
+      para:"Xiaomi 2022 Bluetooth 5.0 Headsets Wireless Earphone LED Display With Mic Hifi Stereo Sport Earbuds Earphones Bass - White China",
+      price:"$9.90"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6904007303549349888/16474/goods_img-v1/394534e30d4e.jpg",
+      para:"QIDI TECH X-MAX Large Size Intelligent Industrial Grade 3D Printer - DE",
+      price:"$949.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6866331933228593152/16418/goods_img-v1/42f52c167490.jpg",
+      para:"Yeelight 1SE E27 6W RGBW AC 100 - 240V Smart LED Bulb Colourful Light Version White 3PCS - 6w 3pcs",
+      price:"$24.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16508/goods_img-v1/83e81faaf67b.jpg",
+      para:"V9 Wireless Bluetooth CSR V4.1 Headset Sports Headphone Handsfree Earphone Universal Bluetooth Sports Bass Earbuds with Mic - Black",
+      price:"$11.90"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16486/goods_img-v1/965097e8a620.jpg",
+      para:"Aqara Smart Temperature Humidity Sensor Zigbee Wireless Connection Thermometer Hygrometer Apple Homekit Mi Home APP Control Xiaomi Ecosystem Product - White",
+      price:"$17.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16456/goods_img-v1/937ce184d834.jpg",
+      para:"Midea S8+ Robot Vacuum Cleaner for Home Electrolysis Disinfection Vibration Mopping Smart Vacuum Cleaner Dust Collect Station - Black China",
+      price:"$1260.23"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/eca3dcc2ab20.jpg",
+      para:"L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter with 4K Camera Professional Brushless Toys - Orange 2Battery Bag",
+      price:"$86.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_img_big-v1/8fc8853ff3b3.jpg",
+      para:"Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2 Earphone In Ear Stereo Bass Earphone Ture Wireless Earbuds Redmi Airdots3 - Blue China",
+      price:"$19.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_img-v3/ce8cec017eca.jpg",
+      para:"Original Xiaomi Mitu Cubes Spinner Finger Bricks Intelligence Toys Smart Fidget Magic Cubes Infinity Toys Anti Stress Anxiety - White China",
+      price:"$9.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_img_big-v5/2f380d04f8f3.jpg",
+      para:"Original Xiaomi Mi Airdots Air 2 SE TWS Bluetooth Earphone Wireless Headphone Dual SBC/AAC Tap Stereo Control Dual MIC - White China",
+      price:"$25.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16204/goods_img_big-v1/95b7727db8f7.jpg",
+      para:"Mijia Honeywell Fire Alarm Smoke Detector Sensor Audible Visual Alarm Notication Work With Mi Home APP By Phone - White",
+      price:"$39.99"
+
+    },
+    {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16417/goods_img-v3/21ff9307e5ee.jpg",
+            para: "Smart Watch Men 400Mah Big Battery Music Play Fitness Tracker Bluetooth Call Sport Smartwatch 2021 Health Monitoring - Black China",
+            price: "$33.99"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6866325577285169152/16388/goods_img-v2/9b1ec073177c.jpg",
+            para: "Finishing Fading Blending Professional Hair Trimmer for Men Pro Beard Trimmer Electric Hair Clipper Lithium Hair Cutting Machine - black",
+            price: "$14.27"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6905960412823613440/16538/goods_img-v5/cb7d91b7d1ad.jpg",
+            para: "Teclast T40 Pro 10.4 Tablet 8GB RAM 128GB ROM UNISOC T618 Octa Core Android 11 4G Network Dual Wifi - T40 Pro And Case",
+            price: "$195.59"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6907015762637156352/16509/goods_img-v3/64a2a64125fd.jpg",
+            para: "LED Night Light with Smart Sensor Dusk to Dawn Sensor Daylight White 0.5W EU US Plug 4 Pack - EU White square",
+            price: "$5.99"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/store/6908377430696849408/16532/goods_img-v1/bf4080b95b17.jpg",
+            para: "Smartphone Android 16GB 512GB Celulares Octa Core HD Camera 6.8 Inch Telephone 6800mAh Global Version 4G 5G Mobile Cell Phones - Black US Plug",
+            price: "$178.00"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6908377430696849408/16520/goods_img-v1/80f756912371.jpg",
+            para: "Unlocked Smartphone Original Android 16+512GB Phone 6.7inch Cellphone Dual SIM Camera 5G Cell Mobile Fingerprint Face ID - black EU Plug",
+            price: "$139.00"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_img-v2/41fc8be72f5a.jpg",
+            para: "Massage Gun Deep Tissue Percussion Mini LCD 32 Speeds Muscle Massager Pain Relief Body Relax Fitness - Red China",
+            price: "$36.90"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16497/goods_img-v6/093861bdca6d.jpg",
+            para: "saengQ Electric Aroma Diffuser Air Humidifier 300ML 500ML 1000ML Ultrasonic Cool Mist Maker Fogger LED Essential Oil Diffuser - white 500ml China EU",
+            price: "$29.59"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16472/goods_img-v2/a50fc3341fef.jpg",
+            para: "M11 Ultra Smartphone 16GB+1TB 24+48MP Global Version Android Mobile Phone HD Camera Celular 5G Network Unlocked Cellphones - Gold 12GB256GB",
+            price: "$114.00"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/a67acb1b17db.jpg",
+            para: "L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter with 4K Camera Professional Brushless Toys - Black 2Battery Backpack",
+            price: "$98.41"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16499/goods_img-v5/d57f7bd6e694.jpg",
+            para: "Original External SSD 2TB 1TB 4TB Mobile Solid State Hard Drive USB 3.1 External SSD TypcC Portable Hard Drive Laptop desktop - blue 16TB 2TB",
+            price: "$66.58"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img-v5/d80e56d8f6d2.jpg",
+            para: "Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone Unlocked 2022 5G Mobile Phones Cheap Android Xaiomi Telephone Xiomi - Blue 16G 512GB",
+            price: "$115.90"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16101/goods_img-v9/b572e51099b7.jpg",
+            para: "Original velvet Liquid Silicone Case For Xiaomi mi 9 9SE 10 A3 Note 10 Lite Redmi Note 6 7 8 K30 9T 9S 9 PRO Mi9 Case Back Cover - Yellow For mi 9 SE",
+            price: "$8.93"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/store/6908377430696849408/16531/goods_img-v2/4c8f496c5225.jpg",
+            para: "Unlocked Smartphone 7.3 Inch Cellphones Android Face ID Dual Camera SIM 4G 5G Smart Mobile Cell Phone Global Version 16+512GB Celulares - black EU Plug",
+            price: "$163.00"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6908377430696849408/16521/goods_img-v1/c3d3631eb6a6.jpg",
+            para: "Unlock Phone 5.5 Inch Smartphone Android 16GB RAM 512GB ROM 4800mAh Deca Core MTK Mobile Cellphone 24+48MP Rear Cameras - YELLOW US",
+            price: "$111.00"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6866325577285169152/16388/goods_img-v2/02dff0d91ce8.jpg",
+            para: "Finishing Fading Blending Professional Hair Trimmer for Men Pro Beard Trimmer Electric Hair Clipper Lithium Hair Cutting Machine - Dragon B",
+            price: "$15.15"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6878388619120406528/16535/goods_img-v1/8885f332f8c5.jpg",
+            para: "Xiaomi Mi Band 7 Smart Bracelet 6 Color AMOLED Screen Miband 7 Blood Oxygen Fitness Traker Bluetooth Waterproof Smart Band Wristband - Yellow",
+            price: "$52.99"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16396/goods_img-v1/84e4c8438d13.jpg",
+            para: "Mecool KM2 For Netflix 4K Android TV Box Amlogic S905X2 2GB DDR4 USB3.0 SPDIF Ethernet WiFi Prime Video HDR 10 Widevine L1 TVBOX - KM2 TV Box G30 China EU Plug",
+            price: "$179.98"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/desc/6615272824267153408/15949/goods_img-v3/f2d7de8219fe.jpg",
+            para: "70mai Dash Cam Pro 1944P Speed Coordinates GPS ADAS 70mai Pro Car Dash Camera WiFi DVR Voice Control 24H Park 70mai - 70mai Pro English 32GB TF Card CHINA",
+            price: "$89.99"
+        },
+        {
+            img: "https://gloimg.gbtcdn.com/soa/gb/store/6868553449588584448/16392/goods_img-v1/5937b9530d81.jpg",
+            para: "Whole kit skateboard Death Wish chocolate spitfire skateboard wheels VENTURE 139 trucks grizzly grip tapes - skateboard-Multicolor United States one set skateboard",
+            price: "$110.00"
+        },
+    ]
+    arr.forEach(function(el){
+       let div= document.createElement("div");
+        let img=document.createElement("img");
+         img.setAttribute("src",el.img);
+         let para=document.createElement("p");
+         para.innerText=el.para;
+         div.append(img,para);
+         document.querySelector("#container").append(div);
+    });
+    arr1.forEach(function(el){
+       let div= document.createElement("div");
+        let img=document.createElement("img");
+         img.setAttribute("src",el.img);
+    let para=document.createElement("p");
+         para.innerText=el.para;
+         let para1=document.createElement("p");
+         para1.innerText=el.disprice;
+         let para2=document.createElement("p");
+         para2.innerText=el.price;
+         div.append(img,para,para1,para2);
+         document.querySelector("#container1").append(div);
+    })
+    arr2.forEach(function(el){
+        let div= document.createElement("div");
+        let img=document.createElement("img");
+         img.setAttribute("src",el.img);
+    let para=document.createElement("p");
+         para.innerText=el.para;
+         let para1=document.createElement("p");
+         para1.innerText=el.price;
+         let btn=document.createElement("button")
+         btn.innerText="Add to cart";
+         div.append(img,para,para1,btn);
+         document.querySelector("#container2").append(div);
+    })
+    </script>
+</html>
