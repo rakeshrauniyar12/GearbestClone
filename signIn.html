@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        h1{
+            width: 20%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        form{
+            border: 1px solid transparent;
+            width: 40%;
+            margin: auto;
+            margin-left: 730px;
+            background-color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+        form>input{
+            border: 1px solid transparent;
+            border-radius: 5px;
+            display: block;
+            margin:10px 30px 20px 20px;
+            width: 80%;
+            padding: 15px 15px 15px 15px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+        form>input:nth-child(6){
+            width: 88%;
+            border: 1px solid black;
+            padding: 15px 0px 15px 0px;
+            margin:10px 20px 20px 20px;
+            border-radius: 10px;
+            background-color: rgb(30, 255, 0);
+        }
+        form>label{
+            margin-left:20px;
+        }
+        form>p{
+            width: 100%;
+            text-align: center;
+           }
+           form>p>a{
+            text-decoration: none;
+           }
+           #img>img{
+            height: 45px;
+            margin-top: 10px;
+            margin-left: 30px;
+           }
+           #footerimg{
+            display: flex;
+            width: 20%;
+            margin: auto;
+           }
+           #footerimg>div{
+            margin-top: 20px;
+           }
+           #footerimg>div:nth-child(2){
+
+            margin-left: 20px;
+            margin-bottom: -10px;
+            margin-right: 20px;
+           }
+           #footerimg>div>img{
+            height: 20px;
+           }
+    </style>
+</head>
+<body>
+    <div id="img">
+        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+       </div>
+    <form>
+        <h1>Sign In</h1>
+        <label for="">Email</label>
+        <input id="email" type="email" placeholder="Enter Your Email">
+        <label for="">Password</label>
+        <input id="password" type="password" placeholder="Enter Your Paasword">
+        <input type="submit" value="Sign In">
+        <p>Don't have an account? <a href="signUp.html" target="_parent">Sign Up</a></p>
+    </form>
+    <div id="footerimg">
+        <div>
+        <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png">
+        </div>
+        <div>
+            <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png" alt="">
+        </div>
+        <div>
+            <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png" alt="">
+        </div>
+    </div>
+</body>
+<script>
+   document.querySelector("form").addEventListener("submit",myUser);
+   let arr=JSON.parse(localStorage.getItem("userData"))||[];
+     
+   function myUser(event){
+    event.preventDefault();
+   
+   
+         let x=checkCredential(arr);
+         if(x==true){
+            alert("Login Successfull")
+                window.location.href="homepage.html";
+         }
+         if(x==false){
+            alert("Your given credential does not match")
+         }
+
+
+   }
+
+   function checkCredential(arr){
+    let email=document.querySelector("#email").value;
+   let pass=document.querySelector("#password").value;
+   for(let f=0;f<arr.length;f++){
+    if(arr[f]["email"]==email && arr[f]["password"]==pass){
+        return true
+    } 
+   }
+   return false 
+   }
+</script>
+</html>

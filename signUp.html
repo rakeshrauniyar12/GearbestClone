@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        h1{
+            width: 30%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+       #end>form{
+            border: 1px solid transparent;
+            width: 37%;
+           display: grid;
+           justify-content: flex-end;
+            margin: auto;
+            background-color: white;
+            margin-left: 760px;
+            margin-top: 70px;
+            margin-bottom: 40px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+        form>input{
+            border: 1px solid transparent;
+            border-radius: 5px;
+            display: block;
+            margin:10px 30px 20px 20px;
+            
+            width: 83%;
+            padding: 15px 15px 15px 15px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+         p+input{
+            width: 90%;
+            border: 1px solid black;
+            padding: 15px 0px 15px 0px;
+            margin:10px 25px 20px 20px;
+            border-radius: 10px;
+            background-color: rgb(30, 255, 0);
+        }
+        form>label{
+            margin-left:20px;
+        }
+        form>p{
+            width: 80%;
+            text-align: center;
+            padding: 20px 25px 20px 20px;
+        }
+     p+input+p>a{
+            text-decoration-line: none;
+        }
+        p+input+p{
+            width: 85%;
+            text-align: center;
+           margin: auto;
+        }
+        #img>img{
+            height: 45px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        #footerimg{
+            display: flex;
+            width: 20%;
+            margin: auto;
+           }
+           #footerimg>div{
+            margin-top: 20px;
+           }
+           #footerimg>div:nth-child(2){
+
+            margin-left: 20px;
+            margin-bottom: -10px;
+            margin-right: 20px;
+           }
+           #footerimg>div>img{
+            height: 20px;
+           }
+    </style>
+</head>
+<body>
+   <div id="img">
+    <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+   </div>
+   <div id="end">
+    <form id="form">
+        <h1>Sign Up</h1>
+        <label for="">Email</label>
+        <input id="email" type="email" placeholder="Enter Your Email"/>
+        <label for="">Mobile Number</label>
+        <input id="number" type="number" placeholder="Enter Your Mobile Number"/>
+        <label for="">Password</label>
+        <input id="password" type="number" placeholder="Enter Your Password"/>
+        <p>By signing up, I accept all <a href="file:///C:/Users/Abhinandan/OneDrive/Desktop/Abhinandan_fw19_0048/unit-2/sprint-4/day-1/assignments/signupPage.html?">terms of service</a> and acknowledge the <a href="file:///C:/Users/Abhinandan/OneDrive/Desktop/Abhinandan_fw19_0048/unit-2/sprint-4/day-1/assignments/signupPage.html?">Privacy Policy</a></p>
+        <input type="submit" value="SIGN UP"/>
+        <p>Already have an account? <a href="signIn.html">Sign In</a></p>
+    </form>
+</div>
+<div id="footerimg">
+    <div>
+    <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png">
+    </div>
+    <div>
+        <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png" alt="">
+    </div>
+    <div>
+        <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png" alt="">
+    </div>
+</div>  
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit",userData);
+  let arr=JSON.parse(localStorage.getItem("userData"))||[];
+  function userData(event){
+    event.preventDefault()
+    alert("You are successfully Sign Up, Please Sign In");
+    let obj={
+    email: document.querySelector("#email").value,
+    Number: document.querySelector("#number").value,
+    password: document.querySelector("#password").value
+  }
+  arr.push(obj);
+   localStorage.setItem("userData",JSON.stringify(arr));
+  }
+  
+ 
+</script>
+</html>

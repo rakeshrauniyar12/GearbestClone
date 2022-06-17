@@ -4,123 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #container{
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: auto;
-            column-gap: 10px;
-            width: 100%;
-            margin: auto;
-        }
-        #container>div{
-            border: 1px solid rgb(232, 218, 218);
-        }
-        #container>div>p{
-           width: 60%;
-           margin: auto;
-           padding-left: 20px;
-           margin-bottom: 10px;
-        }
-        #container>div:nth-child(2)>p{
-           width: 40%;
-           margin: auto;
-           padding-left: 20px;
-           margin-bottom: 10px;
-        }
-        #container1{
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: auto;
-            column-gap: 10px;
-            width: 100%;
-            margin: auto;
-        }
-        #container1>div{
-            border: 1px solid rgb(232, 218, 218);
-        }
-        #container1>div>p{
-           width: 100%;
-           margin: auto;
-           padding-left: 10px;
-           margin-bottom: 10px;
-        }
-       
-        #container1>div>p+p+p{
-           width: 100%;
-           margin: auto;
-           padding-left: 10px;
-           margin-bottom: 10px;
-           color: red;
-        }
-         #container2{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: auto;
-           column-gap: 10px;
-        }
-        #container2>div>img{
-            width: 100%;
-        }
-         #container2>div{
-            border: 1px solid rgb(224, 214, 214);
-        }
-        #container2>div>p{
-           width: 100%;
-           margin: auto;
-           padding-left: 10px;
-           margin-bottom: 10px;
-        }
-      #Container+img{
-        display: grid;
-        justify-content: row-end;
-        width: 80%;
-        margin-right: 0px;
-        height: 500px;
-        margin: auto;
-       }
-        #container2>div>p+p{
-           width: 100%;
-           margin: auto;
-           padding-left: 10px;
-           margin-bottom: 10px;
-           color: red;
-        }
-        button{
-            width: 100%;
-            padding-top: 5px;
-            padding-bottom: 5px;
-           background-color: rgb(255, 89, 0);
-           color: black;
-           font-weight: bold;
-           font-size: 20px;
-        }
-        #Container{
-            border: 2px solid red;
-            width: 100%;
-            height: 40px;
-            background-color: #ffda00;
-        }
-        #category{
-           display: flex;
-        }
-        #category>h3{
-            width: 20%;
-            margin-top: 0px;
-          text-align: center;
-          padding-top: 10px;
-        }
-        #category>h3:nth-child(1){
-            background-color: black;
-            height: 100%;
-            color: white;
-            padding-bottom: 10px;
-        }
-            </style>
+    <title>Gearbest</title>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="tags">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAAD29vYREREnJyfDw8OAgIBAQEDPz8+fn58wMDAfHx9tbW23t7fJycm0tLTb29s2NjZoaGjw8PBLS0uXl5dUVFRjY2Pj4+ODg4OpqanZ2dkaGhr09PQgICBOTk4NDQ1sJLkwAAADEElEQVR4nO3Y7XKaUBSFYYJGggqK301s0/u/ymrsjLZC2lPW2szY9/2VYTLn7CckB0yW9WtZ7ovjk6tjsS8PPSfsVV6Obbhr4zIfCriI8H0YF8MAV0G+c6sBfOviZoBm5iYW63Dh5rr7/JB9rdzETTRwft1793GhvsxR15uOEfs2jwUubrauL5ea05ffTqde7vqNjT1uRjc7Ly+Xznf143a+m4SjSGB5u/Pz5dr50XE8nQfr0f1wk/YSiWWgsLnd+HIGXI6apqqa+9GqjmUW99/6WU0ccPnrzptDnr9+NlqXMPUAXoYJt4mTjSZf2pp8T1xnGyac/3kYS3EPjN1Awl0UMJ8OJJxGfcjIW54HIY0QIkSIECFChAjlwln9HFU9G0Q4Dtru3BihNoSGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihuP9GOKufo6pngwjjQ4gQYU/hsSmuNceHE+5fflvkZf9YwrJlmfKRhJPWdSYPJOxY6HGE7bcw/SbGCaeJk712LPSauM40SpjtEierOtapEtfZRQGzeeJkbSfpudTTdB4m3CZO1vWzT/1d2IYJl4mTPb21LvOWuswyTJg1iaMd246IPPXNrYkDpr+OTO/v4lvqidz552wp/b1tX73cVqW/lo4igdkieb7+LUKFyQ+M/sU9Kn62CQZuooHZuggFFutwYZatAoGrAXynFuMg3zj4kLmWlxHGcRn2kaKtZbkv/um/Sn/VsdiXh54T/gBkFzr+kZEXvAAAAABJRU5ErkJggg==" alt="">
+        <select name="saves" id="select">
+            <option value="Save $3 with App">Save $3 with App</option>
+        </select>
+        <select><option value="Support Center">Support Center</option></select>
+        <select>
+            <option value="Ship to /USD">Ship to /USD</option>
+        </select>
+        <select>
+            <option value="Language">Language</option>
+            <option value="English">"English</option>
+            <option value="French">French</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Chainese">Chainese</option>
+            <option value="Marathi">Marathi</option>
+        </select>
+        <select>
+            <option value="Country Websites">Country Websites</option>
+            <option value="India">India</option>
+            <option value="Farnce">Farnce</option>
+            <option value="China">china</option>
+            <option value="Italia">Italia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Japan">Japan</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Turkiye">Turkiye</option>
+            <option value="Germany">Germany</option>
+            <option value="UK">UK</option>
+        </select>
+    </div>
+    <header class="cnt">
+        <nav class="box">
+            <div class="left">
+                <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+            </div>
+            <form>
+                <select name="categary" id="filter" >
+                    <option value="All">All</option>
+                    <option value="MARKETPLACES">MARKETPLACES</option>
+                    <option value="Appliances">Appliances</option>
+                    <option value="Watches & Jewelry">Watches & Jewelry</option>
+                    <option value="Cellphones & Accessories">Cellphones & Accessories</option>
+                    <option value="Laptop & Tablet">Laptop & Tablet</option>
+                    <option value="Consumer & Electronic">Others</option>
+                    <option value="Others">Others</option>
+                </select>
+             <input type="text" placeholder="Search Anything" name="q"/>
+             <a class="btn" href="#"><i class="fasfa-search"></i></a>
+             <button id="btn" type="submit"><img src="https://img.icons8.com/ios-glyphs/2x/search.png"></button>
+            </form>
+            <div class="sign">
+                <img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-cartoon-electronic-contact-icon-image_2292426.jpg" alt="">
+                <p><a href="signIn.html">SignIn</a></p>
+                <img src="data:image/png;base64,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" alt="">
+                <p>Favorites</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qZ9KgHw477yXCNswFvJfrZW9n-ygHPPV2Q&usqp=CAU" alt="">
+                <p><a href="cart.html">Cart</a></p>
+            </div>
+        </nav>
+    </header>
     <div id="Container">
         <div id="category">
             <h3>Category</h3>
@@ -136,6 +86,77 @@
     <div id="container1"></div>
     <h2>RECOMMENDED FOR YOU</h2>
     <div id="container2"></div>
+    <select id="select1">
+        <option value="view more">View More</option>
+        <option value=""></option>
+        <option value=""></option>
+    </select>
+    <div id="footer">
+        <div>
+            <h3>Company Information</h3>
+           <p><a href="#">About Us</a></p>
+            <p><a href="#">Top Searches</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & Condition</a></p>
+            <p><a href="#">Intellectual Property Policy</a></p>
+            <p><a href="#">Testimonials</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">Report Security Issue</a></p>
+            <p><a href="#">Sell On Gearbest</a></p>
+            <p><a href="#">Cookies Policy</a></p>
+            <p><a href="#">Top Brands</a></p>
+            <p><a href="#">Gearbest Official Blog</a></p>
+        </div>
+        <div>
+            <h3>Customer Service</h3>
+            <p><a href="#">Shipping Information</a></p>
+            <p><a href="#">My Favorite</a></p>
+            <p><a href="#">FAQ For newsLetter Subscription</a></p>
+            <p><a href="#">My Points</a></p>
+            <p><a href="#">Warranty and Return</a></p>
+            <p><a href="#">Payments Method</a></p>
+            <p><a href="#">Deposit Expansion</a></p>
+            <p><a href="#">FAQ and Support</a></p>
+            <p><a href="#">Site Map</a></p>
+            <p><a href="#">Gearbest Wallet Instruction</a></p>
+            <p><a href="#">FAQs about corona</a></p>
+
+        </div>
+        <div>
+            <h3>Other Business</h3>
+            <p><a href="#">Partnership Program</a></p>
+            <p><a href="#">Associate Program</a></p>
+        </div>
+        <div></div>
+       
+    </div>
+    <div>
+        <div id="footerimg">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/money.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/m.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/rese.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/paypal.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/visa.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/a.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ww.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/jcb.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/dic.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ya.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/d.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/qiwi.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/oxxo.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/webmoney.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/bo.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/postepay.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/giropay.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/sofort.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/eps.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/p.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/pago.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png" alt="">
+            <img src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png" alt="">
+        </div>
+    </div>
 </body>
 <script>
     let arr=[
@@ -192,11 +213,12 @@
             price:"$15.75",
         },
     ]
-    arr2=[
+   arr2=[ 
         {
             img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16534/goods_img-v1/ed230b4b2700.jpg",
             para:"Original Xiaomi Mi Band 7/7 NFC Snart Wristband 1.62 inch",
             price:"$48.99",
+            number:"1",
         },
         {
             img:"https://gloimg.gbtcdn.com/soa/gb/item/6926471294045319168/16529/goods_img-v1/8ad475fc01f3.jpg",
@@ -219,187 +241,189 @@
             price:"$1000.00"
         },
         { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img-v1/126354806df6.jpg",
-      para:"Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen For Office Signing Pens Smooth Switzerland Refill Mikuni For School Pen - Black China 1 PCS",
+      para:"Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen",
       price:"$2.59"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img_big-v5/6233d35f6f8a.jpg",
-      para:"Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone Unlocked 2022 5G Mobile Phones Cheap Android Xaiomi Telephone Xiomi - Black 16G 512GB",
+      para:"Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone ",
       price:"$107.99"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16545/goods_img_big-v3/49bbbbea2c5b.jpg",
-      para:"Xiaomi Fan 2 Smart Standing double layer fan blade Portable rechargeable Dual natural wind Intelligent Mihome app control DC inverter motor - White Germany",
+      para:"Xiaomi Fan 2 Smart Standing double layer fan blade Portable",
       price:"$69.99"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16488/goods_img_big-v3/d238ad6a3d2a.jpg",
-      para:"2022 New Smartphone 7.3 Inch MIX4 72MP Camera Unlock Mobile Phones Celular Cellphone Qualcomm 888+ - Black 4GB 128GB",
+      para:"2022 New Smartphone 7.3 Inch MIX4 72MP Camera",
       price:"$114.30"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_img_big-v3/31d0d9d6c843.jpg",
-      para:"A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision Wireless Remote Monitor Mini Camera - Black - China Black",
+      para:"A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision",
       price:"$10.68"   
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16519/goods_img-v1/ad5af71dbbf9.jpg",
-      para:"WalkingPad R2 Treadmill Smart APP LED Touch Panel Remote Control Running-Walking Mode - Black Poland",
+      para:"WalkingPad R2 Treadmill Smart APP LED Touch Panel",
       price:"$585.00"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16488/goods_img-v1/78ad914ae7ca.jpg",
-      para:"4-color TFT screen Finger Clip Type Oximeter Pulse Oximetry Monitor - White",
+      para:"4-color TFT screen Finger Clip Type Oximeter Pulse Oximetry",
       price:"$8.99"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img_big-v3/a06e3d5ad873.jpg",
-      para:"Original Xiaomi Backpack 7L/10L/15L/20L Travel Light Weight Small Size Backpack Unisex Urban Casual Sports Chest Pack Bags - Black China 20L",
+      para:"Original Xiaomi Backpack 7L/10L/15L/20L Travel",
       price:"$13.99"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16488/goods_img_big-v5/b1790ebe72cd.jpg",
-      para:"Xiaomi Redmi Buds 3 Lite TWS Bluetooth 5.2 Earphone Headset IP54 18 Hours Battery Life Mi Ture Wireless Earbuds 3 Youth Edition - Redmi Buds 3 Lite",
+      para:"Xiaomi Redmi Buds 3 Lite TWS Bluetooth 5.2 Earphone Headset",
       price:"$20.86"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16531/goods_img_big-v1/ea9ddbe7643e.jpg",
-      para:"Xiaomi 2022 Bluetooth 5.0 Headsets Wireless Earphone LED Display With Mic Hifi Stereo Sport Earbuds Earphones Bass - White China",
+      para:"Xiaomi 2022 Bluetooth 5.0 Headsets Wireless Earphone LED",
       price:"$9.90"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6904007303549349888/16474/goods_img-v1/394534e30d4e.jpg",
-      para:"QIDI TECH X-MAX Large Size Intelligent Industrial Grade 3D Printer - DE",
+      para:"QIDI TECH X-MAX Large Size Intelligent Industrial Grade 3D",
       price:"$949.00"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6866331933228593152/16418/goods_img-v1/42f52c167490.jpg",
-      para:"Yeelight 1SE E27 6W RGBW AC 100 - 240V Smart LED Bulb Colourful Light Version White 3PCS - 6w 3pcs",
+      para:"Yeelight 1SE E27 6W RGBW AC 100 - 240V Smart LED Bulb",
       price:"$24.99"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16508/goods_img-v1/83e81faaf67b.jpg",
-      para:"V9 Wireless Bluetooth CSR V4.1 Headset Sports Headphone Handsfree Earphone Universal Bluetooth Sports Bass Earbuds with Mic - Black",
+      para:"V9 Wireless Bluetooth CSR V4.1 Headset Sports Headphone",
       price:"$11.90"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16486/goods_img-v1/965097e8a620.jpg",
-      para:"Aqara Smart Temperature Humidity Sensor Zigbee Wireless Connection Thermometer Hygrometer Apple Homekit Mi Home APP Control Xiaomi Ecosystem Product - White",
+      para:"Aqara Smart Temperature Humidity Sensor Zigbee Wireless",
       price:"$17.99"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16456/goods_img-v1/937ce184d834.jpg",
-      para:"Midea S8+ Robot Vacuum Cleaner for Home Electrolysis Disinfection Vibration Mopping Smart Vacuum Cleaner Dust Collect Station - Black China",
+      para:"Midea S8+ Robot Vacuum Cleaner for Home Electrolysis",
       price:"$1260.23"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/eca3dcc2ab20.jpg",
-      para:"L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter with 4K Camera Professional Brushless Toys - Orange 2Battery Bag",
+      para:"L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter",
       price:"$86.99"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_img_big-v1/8fc8853ff3b3.jpg",
-      para:"Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2 Earphone In Ear Stereo Bass Earphone Ture Wireless Earbuds Redmi Airdots3 - Blue China",
+      para:"Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2 Earphone",
       price:"$19.99"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_img-v3/ce8cec017eca.jpg",
-      para:"Original Xiaomi Mitu Cubes Spinner Finger Bricks Intelligence Toys Smart Fidget Magic Cubes Infinity Toys Anti Stress Anxiety - White China",
+      para:"Original Xiaomi Mitu Cubes Spinr Finger Bricks",
       price:"$9.99"
     },
     { img:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_img_big-v5/2f380d04f8f3.jpg",
-      para:"Original Xiaomi Mi Airdots Air 2 SE TWS Bluetooth Earphone Wireless Headphone Dual SBC/AAC Tap Stereo Control Dual MIC - White China",
+      para:"Original Xiaomi Mi Airdots Air 2 TWS Bluetooth Earphone",
       price:"$25.99"
     },
     { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16204/goods_img_big-v1/95b7727db8f7.jpg",
-      para:"Mijia Honeywell Fire Alarm Smoke Detector Sensor Audible Visual Alarm Notication Work With Mi Home APP By Phone - White",
+      para:"Mijia Honeywell Fire Alarm Smoke Detector Sensor",
       price:"$39.99"
 
     },
     {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16417/goods_img-v3/21ff9307e5ee.jpg",
-            para: "Smart Watch Men 400Mah Big Battery Music Play Fitness Tracker Bluetooth Call Sport Smartwatch 2021 Health Monitoring - Black China",
+            para: "Smart Watch Men 400Mah Big Battery Music Play Fitness",
             price: "$33.99"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6866325577285169152/16388/goods_img-v2/9b1ec073177c.jpg",
-            para: "Finishing Fading Blending Professional Hair Trimmer for Men Pro Beard Trimmer Electric Hair Clipper Lithium Hair Cutting Machine - black",
+            para: "Finishing Fading Blending Professional Hair Trimmer for Men",
             price: "$14.27"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6905960412823613440/16538/goods_img-v5/cb7d91b7d1ad.jpg",
-            para: "Teclast T40 Pro 10.4 Tablet 8GB RAM 128GB ROM UNISOC T618 Octa Core Android 11 4G Network Dual Wifi - T40 Pro And Case",
+            para: "Teclast T40 Pro 10.4 Tablet 8GB RAM 128GB ROM UNISOC T618",
             price: "$195.59"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6907015762637156352/16509/goods_img-v3/64a2a64125fd.jpg",
-            para: "LED Night Light with Smart Sensor Dusk to Dawn Sensor Daylight White 0.5W EU US Plug 4 Pack - EU White square",
+            para: "LED Night Light with Smart Sensor Dusk to Dawn Sensor",
             price: "$5.99"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6908377430696849408/16532/goods_img-v1/bf4080b95b17.jpg",
-            para: "Smartphone Android 16GB 512GB Celulares Octa Core HD Camera 6.8 Inch Telephone 6800mAh Global Version 4G 5G Mobile Cell Phones - Black US Plug",
+            para: "Smartphone Android 16GB 512GB Celulares Octa Core",
             price: "$178.00"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6908377430696849408/16520/goods_img-v1/80f756912371.jpg",
-            para: "Unlocked Smartphone Original Android 16+512GB Phone 6.7inch Cellphone Dual SIM Camera 5G Cell Mobile Fingerprint Face ID - black EU Plug",
+            para: "Unlocked Smartphone Original Android 16+512GB",
             price: "$139.00"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_img-v2/41fc8be72f5a.jpg",
-            para: "Massage Gun Deep Tissue Percussion Mini LCD 32 Speeds Muscle Massager Pain Relief Body Relax Fitness - Red China",
+            para: "Massage Gun Deep Tissue Percussion Mini LCD 32",
             price: "$36.90"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16497/goods_img-v6/093861bdca6d.jpg",
-            para: "saengQ Electric Aroma Diffuser Air Humidifier 300ML 500ML 1000ML Ultrasonic Cool Mist Maker Fogger LED Essential Oil Diffuser - white 500ml China EU",
+            para: "saengQ Electric Aroma Diffuser Air Humidifier 300ML 500ML",
             price: "$29.59"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16472/goods_img-v2/a50fc3341fef.jpg",
-            para: "M11 Ultra Smartphone 16GB+1TB 24+48MP Global Version Android Mobile Phone HD Camera Celular 5G Network Unlocked Cellphones - Gold 12GB256GB",
+            para: "M11 Ultra Smartphone 16GB+1TB 24+48MP Global",
             price: "$114.00"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/a67acb1b17db.jpg",
-            para: "L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter with 4K Camera Professional Brushless Toys - Black 2Battery Backpack",
+            para: "L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter",
             price: "$98.41"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16499/goods_img-v5/d57f7bd6e694.jpg",
-            para: "Original External SSD 2TB 1TB 4TB Mobile Solid State Hard Drive USB 3.1 External SSD TypcC Portable Hard Drive Laptop desktop - blue 16TB 2TB",
+            para: "Original External SSD 2TB 1TB 4TB Mobile Solid State",
             price: "$66.58"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img-v5/d80e56d8f6d2.jpg",
-            para: "Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone Unlocked 2022 5G Mobile Phones Cheap Android Xaiomi Telephone Xiomi - Blue 16G 512GB",
+            para: "Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb",
             price: "$115.90"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16101/goods_img-v9/b572e51099b7.jpg",
-            para: "Original velvet Liquid Silicone Case For Xiaomi mi 9 9SE 10 A3 Note 10 Lite Redmi Note 6 7 8 K30 9T 9S 9 PRO Mi9 Case Back Cover - Yellow For mi 9 SE",
+            para: "Original velvet Liquid Silicone Case For Xiaomi mi 9",
             price: "$8.93"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6908377430696849408/16531/goods_img-v2/4c8f496c5225.jpg",
-            para: "Unlocked Smartphone 7.3 Inch Cellphones Android Face ID Dual Camera SIM 4G 5G Smart Mobile Cell Phone Global Version 16+512GB Celulares - black EU Plug",
+            para: "Unlocked Smartphone 7.3 Inch Cellphones Android Face ID Dual",
             price: "$163.00"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6908377430696849408/16521/goods_img-v1/c3d3631eb6a6.jpg",
-            para: "Unlock Phone 5.5 Inch Smartphone Android 16GB RAM 512GB ROM 4800mAh Deca Core MTK Mobile Cellphone 24+48MP Rear Cameras - YELLOW US",
+            para: "Unlock Phone 5.5 Inch Smartphone Android 16GB RAM",
             price: "$111.00"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6866325577285169152/16388/goods_img-v2/02dff0d91ce8.jpg",
-            para: "Finishing Fading Blending Professional Hair Trimmer for Men Pro Beard Trimmer Electric Hair Clipper Lithium Hair Cutting Machine - Dragon B",
+            para: "Finishing Fading Blending Professional Hair Trimmer for Men",
             price: "$15.15"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878388619120406528/16535/goods_img-v1/8885f332f8c5.jpg",
-            para: "Xiaomi Mi Band 7 Smart Bracelet 6 Color AMOLED Screen Miband 7 Blood Oxygen Fitness Traker Bluetooth Waterproof Smart Band Wristband - Yellow",
+            para: "Xiaomi Mi Band 7 Smart Bracelet 6 Color AMOLED Screen",
             price: "$52.99"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16396/goods_img-v1/84e4c8438d13.jpg",
-            para: "Mecool KM2 For Netflix 4K Android TV Box Amlogic S905X2 2GB DDR4 USB3.0 SPDIF Ethernet WiFi Prime Video HDR 10 Widevine L1 TVBOX - KM2 TV Box G30 China EU Plug",
+            para: "Mecool KM2 For Netflix 4K Android TV Box Amlogic S905X2",
             price: "$179.98"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/desc/6615272824267153408/15949/goods_img-v3/f2d7de8219fe.jpg",
-            para: "70mai Dash Cam Pro 1944P Speed Coordinates GPS ADAS 70mai Pro Car Dash Camera WiFi DVR Voice Control 24H Park 70mai - 70mai Pro English 32GB TF Card CHINA",
+            para: "70mai Dash Cam Pro 1944P Speed Coordinates GPS ADAS",
             price: "$89.99"
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6868553449588584448/16392/goods_img-v1/5937b9530d81.jpg",
-            para: "Whole kit skateboard Death Wish chocolate spitfire skateboard wheels VENTURE 139 trucks grizzly grip tapes - skateboard-Multicolor United States one set skateboard",
+            para: "Whole kit skateboard Death Wish chocolate spitfire skateboard",
             price: "$110.00"
         },
     ]
+    cartLS=JSON.parse(localStorage.getItem("cartpage"))||[];
+    console.log(cartLS);
     arr.forEach(function(el){
        let div= document.createElement("div");
         let img=document.createElement("img");
@@ -422,18 +446,44 @@
          div.append(img,para,para1,para2);
          document.querySelector("#container1").append(div);
     })
-    arr2.forEach(function(el){
+    displayItems(arr2);
+    function displayItems(arr2){
+        arr2.forEach(function(el){
         let div= document.createElement("div");
         let img=document.createElement("img");
          img.setAttribute("src",el.img);
     let para=document.createElement("p");
-         para.innerText=el.para;
+    let anchor=document.createElement("a");
+    anchor.setAttribute("href","#");
+    anchor.innerText=el.para;
+        para.append(anchor);
          let para1=document.createElement("p");
          para1.innerText=el.price;
          let btn=document.createElement("button")
          btn.innerText="Add to cart";
+         btn.style.cursor="pointer";
+         btn.addEventListener("click",function(){
+            console.log(el.para)
+         if(cartpage(el.para)==true){
+                    alert("Item added sucessfully");
+                    cartLS.push(el);
+                    localStorage.setItem("cartpage",JSON.stringify(cartLS));
+         } else {
+            alert("Item already exists");
+         }
+         });
          div.append(img,para,para1,btn);
          document.querySelector("#container2").append(div);
     })
+    }
+   
+    function cartpage(e){
+        for(let f=0;f<cartLS.length;f++){
+            if(cartLS[f].para==e){
+                return false
+            }
+        }
+       return true;
+    }
     </script>
 </html>

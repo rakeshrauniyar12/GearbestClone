@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartpage.css">
+</head>
+<body>
+    <div>
+        <table id="table">
+            <thead id="thead">
+                <th>Selected Items</th>
+                <th>Unit Price</th>
+                <th>Subtotal</th>
+                <th>Operation</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+    let getCartItem=JSON.parse(localStorage.getItem("cartpage"));
+    displayCartItem(getCartItem)
+        function displayCartItem(getCartItem){
+        getCartItem.forEach(function(el,index){
+            let tr= document.createElement("tr");
+       let td1=document.createElement("td");
+       let img=document.createElement("img")
+       
+          img.setAttribute("src",el.img);
+          img.style.height="200px"
+       let td2=document.createElement("td");
+         td2.innerText=el.para
+       let td3=document.createElement("td");
+        td3.innerText=el.price
+       let td4=document.createElement("td");
+
+       let td5=document.createElement("td");
+       td5.innerText="DELETE"
+       td5.style.backgroundColor="red"
+       td5.style.cursor="pointer"
+       td5.addEventListener("click",function(){
+        deleteitem(index)
+       })
+       tr.append(td1,img,td2,td3,td4,td5)
+       document.querySelector("tbody").append(tr);
+      
+        })
+        console.log(document.tbody)
+    }
+   function deleteitem(index){
+    getCartItem.splice(index,1);
+    localStorage.setItem("cartpage",JSON.stringify(getCartItem));
+    window.location.reload();
+   }
+</script>
+</html>
