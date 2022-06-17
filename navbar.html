@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html body{
+            width: 100%;
+            height: 100%;
+        }
+        .left img{
+            width:250px;
+            height: 50px;
+        }
+        .container{
+            margin: auto;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        
+        .box{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+    
+        }
+        
+        form{
+            display: flex;
+            width: 50%;
+            height: 30px;
+            border-radius: 15px;
+            border:1px solid yellow;
+            padding-bottom: 6px;
+            margin-bottom: 2px;
+            margin-left: 100px;
+        }
+        .sign{
+            display: flex;
+            justify-content: space-around;
+        }
+        .sign>img{
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+        .sign>img+p{
+            margin-top: 2px;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        button{
+            width: 50px;
+            height: 36px;
+            background-color: yellow;
+            outline: none;
+            border: none;
+            border-radius: 0px 10px 10px 0px;
+            
+            
+        }
+       button img{
+        width: 18px;
+        padding-top: 10px;
+    
+       }
+     input{
+        width: 450px;
+        padding: 16px;
+        border: none;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        outline: none;
+       }
+       #filter{
+        width: 40px;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: -1px;
+        padding-bottom: 6px;
+       }
+       #tags{
+        margin-left: 50%;
+       }
+       #tags>img{
+        width: 12px;
+       }
+       #tags>select{
+        border: none;
+        outline: none;
+        font-size: 12px;
+        color:grey
+       }
+       #tags>select:hover{
+        background-color: antiquewhite;
+       }
+       #tags>option{
+        border: none;
+        outline: none;
+       }
+    </style>
+</head>
+<body>
+    <div id="tags">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAAD29vYREREnJyfDw8OAgIBAQEDPz8+fn58wMDAfHx9tbW23t7fJycm0tLTb29s2NjZoaGjw8PBLS0uXl5dUVFRjY2Pj4+ODg4OpqanZ2dkaGhr09PQgICBOTk4NDQ1sJLkwAAADEElEQVR4nO3Y7XKaUBSFYYJGggqK301s0/u/ymrsjLZC2lPW2szY9/2VYTLn7CckB0yW9WtZ7ovjk6tjsS8PPSfsVV6Obbhr4zIfCriI8H0YF8MAV0G+c6sBfOviZoBm5iYW63Dh5rr7/JB9rdzETTRwft1793GhvsxR15uOEfs2jwUubrauL5ea05ffTqde7vqNjT1uRjc7Ly+Xznf143a+m4SjSGB5u/Pz5dr50XE8nQfr0f1wk/YSiWWgsLnd+HIGXI6apqqa+9GqjmUW99/6WU0ccPnrzptDnr9+NlqXMPUAXoYJt4mTjSZf2pp8T1xnGyac/3kYS3EPjN1Awl0UMJ8OJJxGfcjIW54HIY0QIkSIECFChAjlwln9HFU9G0Q4Dtru3BihNoSGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihuP9GOKufo6pngwjjQ4gQYU/hsSmuNceHE+5fflvkZf9YwrJlmfKRhJPWdSYPJOxY6HGE7bcw/SbGCaeJk712LPSauM40SpjtEierOtapEtfZRQGzeeJkbSfpudTTdB4m3CZO1vWzT/1d2IYJl4mTPb21LvOWuswyTJg1iaMd246IPPXNrYkDpr+OTO/v4lvqidz552wp/b1tX73cVqW/lo4igdkieb7+LUKFyQ+M/sU9Kn62CQZuooHZuggFFutwYZatAoGrAXynFuMg3zj4kLmWlxHGcRn2kaKtZbkv/um/Sn/VsdiXh54T/gBkFzr+kZEXvAAAAABJRU5ErkJggg==" alt="">
+        <select name="saves" id="select">
+            <option value="Save $3 with App">Save $3 with App</option>
+        </select>
+        <select><option value="Support Center">Support Center</option></select>
+        <select>
+            <option value="Ship to /USD">Ship to /USD</option>
+        </select>
+        <select>
+            <option value="Language">Language</option>
+            <option value="English">"English</option>
+            <option value="French">French</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Chainese">Chainese</option>
+            <option value="Marathi">Marathi</option>
+        </select>
+        <select>
+            <option value="Country Websites">Country Websites</option>
+            <option value="India">India</option>
+            <option value="Farnce">Farnce</option>
+            <option value="China">china</option>
+            <option value="Italia">Italia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Japan">Japan</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Turkiye">Turkiye</option>
+            <option value="Germany">Germany</option>
+            <option value="UK">UK</option>
+        </select>
+    </div>
+    <header class="container">
+        <nav class="box">
+            <div class="left">
+                <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+            </div>
+            <form>
+                <select name="categary" id="filter" >
+                    <option value="All">All</option>
+                    <option value="MARKETPLACES">MARKETPLACES</option>
+                    <option value="Appliances">Appliances</option>
+                    <option value="Watches & Jewelry">Watches & Jewelry</option>
+                    <option value="Cellphones & Accessories">Cellphones & Accessories</option>
+                    <option value="Laptop & Tablet">Laptop & Tablet</option>
+                    <option value="Consumer & Electronic">Others</option>
+                    <option value="Others">Others</option>
+                </select>
+             <input type="text" placeholder="Search Anything" name="q"/>
+             <a class="btn" href="#"><i class="fasfa-search"></i></a>
+             <button type="submit"><img src="https://img.icons8.com/ios-glyphs/2x/search.png"></button>
+            </form>
+            <div class="sign">
+                <img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-cartoon-electronic-contact-icon-image_2292426.jpg" alt="">
+                <p>SignIn</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8AAADf39/k5OT29vbr6+vCwsL8/Pzd3d3MzMxDQ0OMjIzJycnj4+Pv7++zs7O7u7saGhpdXV1LS0tjY2PV1dV8fHzDw8OWlpZ0dHSwsLA9PT0mJiajo6OGhoZvb28VFRUyMjJVVVUiIiKgoKCVlZVISEg2NjYXFxc/Pz9paWksLCzen0/MAAAIeklEQVR4nO2daXuiMBCAPVBUFO+LetfWbf3//28rmYAoR8hMQvTJ+2m3SszAZK4MUKtZLBaLxWKxWCwWi8VisVgsFovFYuG0Bp0/Gk2fbES/2bgNOWiRjSiJ2wi86bge83nabecOYkSnE3inz7sRx1MvaLhkMy5FK5gc6qn0Vh2pEQfbU/qAh0mg/Wo6wTR9MsD1q+yU/O1H7ojTAKMbZWkucifDmJW5kM21wIiLpjKJkgxmArO5MRkIjuiLyBeeNdERMfj7xG9u9t6wO280/4xftx/sfseJTxdCNmKVOOa694J+tzP4G3LeHXr7TeLTPZ3BzmB792vHXf95bTj93eXuO/3CETvX+Nu9r+7zOfkb8Xg34pZEjiyaveiHxl4j82sNL7ayXsGQ8Sm7rrKtU8OLlaOncDkO418Z5X/THUZX5pSrqZHO99oFPz6Kz+6w5LyFiSzoT7Hu1WpBpMzZS8f55hpRJN+N/g8fciE85zK4kQcsuH7RAfz6HLK0z+cXukiVOSM+hamCMMfnNm0tPviSTyhdRAfCs8NceESX+5UNuU1tcduxLHOUz+OUtPm4G5GF+gg/a5mKIYkPAvbKnjqIDq4pH33IrSkfLM6B9Cry0/1b/lBQq9PTB7NyS/AOWN8byrUIRmYnc+w6XZIVYsgdmBuZY9NZSJ/uG7/s6KQ/6IPZkhvSI3YaQ8TpvvH9bFD9LN0VBK4iketvstH20gO4zCt83/1pmml/BIG1SBPAMdvVQ4wwYNM5R3844+eHn1XENtujCQN6zrM70ArB2Cgd0HOCTANGKuXon9knzngPY2U4S4Izfzc35GxqLptOEP4HYnLszNZI8wDAEkI7V/AOt4zZYf/sYod0k6ovywy/Yhj7yIMtSLSixjONGW4QZhN+8LPhV65T68RXE8sPgcdg51sk4S1kCD7+ROer+5FeSOPQOR0e2iyevD+CHlodAqpVeGNejxHPeXMZ3VloOcLgakwzmygEpzDxnLACh8gxWuF0JFOKrOFukOXnHnI4pqTZddGyQEYgn6U80UCq6eR2+JFsOtxjkHgK4HgbbyJ7tHugPeFcqcjUvgZqcZANuRp0zhBwqC8huETZhRSQzyd0+6Q1eQe1EEOd2lDO5y8ZmxOXcjcYvZ+Sui5F7DEecUxtFlTgYYISuhBZISyglzuWhSDoRFUxXURUM6CMkZXB4nm5RL9DHLOpgTltuRYlJqGuHhZZmlbCHDoIDdfHACEhRsP1gbEWzReypXJrySdPLVTAkgvJYDc8lqgMpYwRIqaphQnwinQ+9IS75QfJg8NmCTXtR3SE9dcPyYPDxAS5LaCcGSbFCxXgk3Q+9HxilhImMdEGKsXrvIBDnKPCEv8FUuAhxh1CudVsYxqaUvmidbhTTrS3pohwf01+P1lBwZQYXLmUZxfIRhOlLJF1CDesJ1JuXFATbluMEZ0iYcBwoZsQORds2BUYXshoIpchL5mqvUsFA+u5Q+0ohx0rhL24xIQ7K7huny/8SVIIU7Ev1BgNo9V0i/QVIUeTrekFF7IxVgaXFFnugy2zMFU30+nvaIzEt7lpcDgzfIfcyNgkcUhV7axjilkq+aDSrp2htYw5mYVgsZ95RcUZXcw8MTL8ZideuqMtAesFIOg8J2VNuXi+DQxOW0SugtGum1dzY+3iIneAC3Ex7iKyS0gXL4+MW4lrKm/POVKkKYSwpI6wexlWIo1ppmBCuwpvsAjJlB63roJIskuuFhiOKs434d1KaPgdVLSwtY2/D5EAuO+Q3O4tjEn2d4oCkOj+waohvH/xAVbhr343kd2Rh6nkZ8Lu2Ky6dspqpBR3tT4D9w8qf5xYLnDzvKKSw8KAyGaiNM8BM11lL99IsdNqKzNjgoBBJw1Ik0wq1lP1vw/nsKrgbahBh+A3qkn3W1rOL6tSVrMrzB7bo7pyC3paRefwSpOdWyp1uTlAwKGhf4n5/X+68yj3n1Jfn2CjZTk8wgwA8T27GUD6ojcE32pN3s6KkuwcoMRwLv4mDaxog2mYKwlrISQvzWQDLkPfUpxpD4jnepXmXIGHgt/Uc9tXX/MiZMz0Bagt3WuCAc9s1dEPxvb2SJ/HKgTYb4mn0pbkV79vAkZ6Vges+EpKJzsd1gasTEW1dnijiMq7veGxjfpcfRJ44vinOkes/hcKAGujLuOfVmZlOFBeVNXDAA/KVlg8LAYsnZqixqqSWOaRvTpjDu6o8sc49VRFxRDdV7+dB6kbee8iPC9aYxJaNBVii87ffWFE0yfrRKn/UJ5tF164YkgHD5T6KTdM2BaMId0ttcis07nFtUonJAXu9RBPUL/cgQLQKpoa6pZe6wn4oPP84OlNu8WDW3e88esq8T4E8McgY4Mb/kxsk3quAdjOQPpoiB8M6C5LAdQL1VIEDUGmePpHIFscy68gB4LcSjPCPODVHFfZ+M2FN80pacuj4YzLeCATqzjlzQeiEbna2Ik2MlIExG8ymwwzA2O1NKAIX772APUQ9dsEaCZyicbayGA0namMtoF2m/sIjgS98hbDwxlh3bjwymPxBBZS6IsBZScxnGs5xwZu9GpcOpGND9GXWEYMGe+42h75kvAIWkRE/t7qlxIwTheLQ0z+7mcDE8J8moIicgGNKP2WA7ZvC0o3/D3Upj82PJWOgIhcQCNT+mLmhSJyAc17roggXMSslL396gIWifgGAsbVqbT+c/6WdEOrTqJwEZ/7ivrvIWAsyKOIWX9/QZaponABTX78qzBp6y1vfb4gzyK+mYDPivpWKspoJ64iv4LG1u5luBfxLQWMI9BuJKDpLz8pDRfx/K4CxiK+rYDxWnzDNchpv7uAsYhvKyBfi2+5BjmjdxewVnPmL1S6t1gsFovFYrFYLBaLxWKxWCwWi8Uo/gMA8kxE9LPmbAAAAABJRU5ErkJggg==" alt="">
+                <p>Favorites</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qZ9KgHw477yXCNswFvJfrZW9n-ygHPPV2Q&usqp=CAU" alt="">
+                <p>Cart</p>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
+
+<!-- let discount=document.createElement("span")
+    discount.innerText="20% OFF"; -->
