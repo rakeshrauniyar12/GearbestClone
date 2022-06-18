@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+    
+            #navbar {
+                        width: 80%;
+                        height: 100px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: auto;
+                        background-color: white;
+                    }
+           .firstbox{
+                        width: 20%;
+                        height: 100%;
+                        background-color: white;
+                    }
+   .firstbox>div>img{
+                        width: 100%;
+                        height: 50%;
+                        margin-top: 20px;
+                        background-color: white;
+                    }         
+          .secondbox{
+                        width: 70%;
+                        height: 100%;
+                        display: block; 
+                        background-color: white; 
+                    }
+              #upper{
+                        width: 100%;
+                        height: 30%;
+                        display: flex;       
+                        gap:25px;
+                        justify-content: right;
+                        align-items: center;
+                        background-color: white;
+                    }
+               #down{
+                        display:flex;   
+                        width: 100%;
+                        height: 40%;
+                        margin-top: 25px;
+                        justify-content: space-between;
+                        background-color: white;
+                    }
+ #down> :first-child{
+                        width: 50%;
+                        height: 60%;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: end;
+                        margin-right: 0%;
+                        background-color: white;
+                    }
+  #down> :last-child{
+                        width: 50%;
+                        height: 60%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        background-color: white;
+                    }
+                   p{
+                        color: gray;
+                        
+                    }
+                 h5{
+                        color: gray;
+                    
+                   }
+         #category {
+                        width: 60%;
+                        height: 60px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        margin: auto; 
+               
+                    }
+       #category>div{
+                        width: 0px;
+                        height: 20px;
+                        border: 1px solid grey;
+                    }
+#category :first-child{
+                        font-size: 22px;
+                    }
+          #container{
+                        width: 75%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-rows: repeat(4, auto);
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                    }
+      #container>div{
+                        height: 330px;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        margin-top: 20px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    }
+                 img{
+            width: 200px;
+            height: 200px;
+                    }
+
+                   p{  
+                        text-align:left;
+                        margin-top: 10px;
+                    }
+                  h3{
+                        text-align: left;
+                        font-weight: lighter;
+                        color: red;
+                        margin-bottom: 10px;
+                        margin-top: -10px;
+                    }
+#container>div :nth-child(4){
+                        margin-top:-10px;
+                        font-size: 12px;
+                    }
+#container>div :nth-child(5){
+                        margin-top: 5px;
+}
+             #option{
+                        width:80%;
+                        height: 70px;
+                        margin: auto;
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+         #option div{
+                        width: 10%;
+                        height: 100%;
+                    }
+     #option div>img{
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 30%;
+                    }
+       #option div>p{
+                        font-size: 12px;
+                        text-align: center;
+                        color: black;
+                    }
+#option>div:first-child{
+                        font-weight: bolder;
+                    }
+ #category>div+h4>hr{
+                        width: 90px;
+                        height: 1px;
+                        background-color: yellow;
+                        border-color: yellow;
+                        margin-bottom: 0px;
+                    }
+         #p_searches{
+                        width: 87%;
+                        height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top:20px ;
+                        margin: auto;
+                        margin-top: 20px;
+                    }
+       #p_searches p{
+                        font-size: 13px;
+                    }
+        #p_searches2{
+                        width: 70%;
+                        height: 15px;
+                        display: flex;
+                        justify-content: center;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: top 10px;
+                        margin: auto;
+                        margin-top: 0px;
+                    }
+      #p_searches2 p{
+                        font-size: 13px;
+                    }
+           .benifits{
+                        width: 90%;
+                        height: 100px;
+                        margin: auto;
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-top: 30px;
+                    }
+
+   .benifits>div>img{
+                        height: 40%;
+                        width: 80%;
+                        margin-bottom: -10px;
+                        padding-top: 10px;
+                    }
+       .benifits div{
+                        margin: auto;
+                        text-align: center;
+                        width: 20%;
+                    }
+     .benifits div>p{
+                        font-size: 13px;
+                        text-align: center;
+                        margin-top: -12px;
+                    }
+    .benifits div>h6{
+                        margin-top: 15px;
+                    }
+.benifits div :nth-child(2){
+                        padding-top: 10px;
+                    }
+.benifits div :nth-child(4){
+                        padding-top: 10px;
+                    }
+               #news{
+                        width: 70%;
+                        height: 60px;
+                        display: flex;
+                        margin: auto;
+                        margin-top: 30px;
+                    }
+           #news>div{
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: left;
+                    }
+         #news>div>p{
+                        margin-right: 5px;
+                        margin-top: 20px;
+                    }
+              .input{
+                        height: 30px;
+                        margin-top: 10px;
+                    }
+                .btn{
+                        height: 35px;
+                        margin-top: 10px;
+                        color: white;
+                        background-color: black;
+                    }
+ #news :nth-child(2){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+        #comeny_info{
+                        width: 80%;
+                        height: 400px;
+                        display: flex;
+                        justify-content: left;
+                        justify-content: space-around;
+                        margin: auto;
+                    }
+      #comeny_info p{
+                        color: gray;
+                        font-size: 14px;
+                    }
+     #comeny_info h5{
+                        font-size: 16px;
+                    }
+               #both{
+                        display: flex;
+                        width: 200px;
+                        height: 200px;
+                    }
+           #both>div{
+                        display:flex;
+                        width: 150px;
+                        height: 160px;
+                        margin: auto;
+                        margin-right: 70px;
+                        margin-top: -30px;
+                    }
+       #both>div>div{
+                        display: block;
+                        width: 80%;
+                        height: 80%;
+                        margin: auto;
+                    }
+   #both>div>div>img{
+                        width: 140px;
+                        height: 150px;
+                    } 
+#both>div>div>div>img{
+                        width: 140px;
+                        height: 150px;
+                        margin-left: 20px;
+                    }
+
+         #comp_names{
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin: auto;
+                        margin-top: 50px;
+                    }
+     #comp_names img{
+                        width: 60px;
+                        height: 30px;
+                    }
+#comp_names :nth-child(3) img{
+                        width: 220px;
+                    }
+      #comp_namestwo{
+                        width: 80%;
+                        height: 20px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin: auto;
+                        margin-top: 50px;
+                    }
+  #comp_namestwo img{
+                        width: 60px;
+                        height: 30px;
+                    }
+         .card:hover{
+                        transform:scale(1.1);
+                        transition:all 0.5s ease-in-out;
+                    }
+.benifits :nth-child(2)>i:hover{
+                        color: rgb(228, 163, 43);
+                    } 
+.benifits :nth-child(2)>h6:hover{
+                        color: rgb(228, 163, 43);
+                        cursor: pointer;
+                    } 
+.benifits :nth-child(3)>i:hover{
+                        color: rgb(228, 163, 43);
+                    } 
+.benifits :nth-child(3)>h6:hover{
+                        color: rgb(228, 163, 43);
+                        cursor: pointer;
+                    } 
+.benifits :nth-child(4)>i:hover{
+                        color: rgb(228, 163, 43);
+                    } 
+.benifits :nth-child(4)>h6:hover{
+                        color: rgb(228, 163, 43);
+                        cursor: pointer;
+                    } 
+.benifits :nth-child(5)>i:hover{
+                        color: rgb(228, 163, 43);
+                    } 
+.benifits :nth-child(5)>h6:hover{
+                        color: rgb(228, 163, 43);
+                        cursor: pointer;
+                    }
+#media :first-child:hover{
+                        color: rgb(243, 9, 243);
+                    }
+#media :nth-child(2):hover{
+                        color: rgb(31, 117, 216);
+                    }
+#media :nth-child(3):hover{
+                        color: rgb(31, 117, 216);
+                    }
+#media :nth-child(4):hover{
+                        color: rgb(20, 182, 211);
+                    }
+#media :nth-child(5):hover{
+                        color: red;
+                    }
+#media :nth-child(6):hover{
+                        color: red;
+                    }
+#media :nth-child(7):hover{
+                        color: teal;
+                    }
+#media :nth-child(8):hover{
+                        color: lawngreen;
+                    }
+             .subcon{
+                        margin-top: -10px;
+                    }
+           .subcon>p{
+                        margin-left: 10px;
+                    }
+.fa-solid.fa-cart-shopping{
+                        color: red;
+                    }
+                    #filter{
+                        width: 40px;
+                        border-color: rgb(228, 173, 22);
+                        border-radius: 10px 0px 0px 10px;
+                    }
+                    #search{
+                        border-color: rgb(228, 173, 22);
+                        border-radius: 0px 0px 0px 0px;
+                    }
+                    #ser>img{
+                          width: 20px;
+                          height: 20px;
+                          border-color: rgb(228, 173, 22);
+                          background-color: rgb(228, 173, 22);
+                    }
+                    #ser{
+                        border-color: rgb(228, 173, 22);
+
+                        background-color: rgb(228, 173, 22);
+                        border-radius: 0px 10px 10px 0px;
+                    }
+                    
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="firstbox">
+            <div>
+                <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png"
+                 alt="logo">
+            </div>
+        </div>
+        <div class="secondbox">
+            <div id="upper">
+                
+                <p>save $3 with App </p>
+            
+            
+                <p>Support Center</p>
+                
+                <select>
+                    <option value="Ship">
+                            <h5>Ship to /USD</h5>
+                    </option>
+                </select>
+                <select>            
+                    <option value="lang">
+                            <h5>Language</h5>
+                    </option>
+                </select>
+                <select>
+                    <option value="">Countery Website</option>
+                </select>
+            </div>
+            <div id="down">
+              <div>
+                <select name="categary" id="filter" >
+                    <option value="All">All</option>
+                    <option value="MARKETPLACES">MARKETPLACES</option>
+                    <option value="Appliances">Appliances</option>
+                    <option value="Watches & Jewelry">Watches & Jewelry</option>
+                    <option value="Cellphones & Accessories">Cellphones & Accessories</option>
+                    <option value="Laptop & Tablet">Laptop & Tablet</option>
+                    <option value="Consumer & Electronic">Others</option>
+                    <option value="Others">Others</option>
+                </select>
+             <input id="search" type="text" placeholder="Search Anything" name="q"/>
+             <a class="btn" href="#"><i class="fasfa-search"></i></a>
+             <button id="ser" type="submit"><img src="https://img.icons8.com/ios-glyphs/2x/search.png"></button>
+             
+                    
+                 </div>
+              <div>
+                <p>Sign In</p>
+                <p>Fsvourites</p>
+                <p>Cart</p>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div id="category">
+          <h4>Category</h4>
+          <div></div>
+          <h4>SUPER DEALS <br> <hr></h4>
+          <h4>APP ONLY</h4>
+          <h4>NEW ARRIVALS</h4>
+    </div>
+<hr>
+    <div id="option">
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/supDeals.png"
+         alt="errror">
+        <p>Flash Sales</p>
+       </div>
+         <div style="width:0px; height: 40px; margin-top: 20px; border-color: grey;"></div>
+       <div>
+         <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/All%20Flash%20Sales.png?imbypass=true"
+         alt="error">
+         <p>All Flash Sales</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Exclusive%20Brands.png?imbypass=true"
+        alt="error">
+        <p>Exclusive Brands</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Mobile%20Phones1.png"
+        alt="error">
+        <p>Mobile Phones</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Electronics1.png?imbypass=true"
+        alt="error">
+        <p>Electronics</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Toys,%20Baby%20&%20Kids11.png?imbypass=true"
+        alt="error">
+        <p>Toys, Baby & Kids</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Computer%20&%20Office11.png?imbypass=true"
+        alt="error">
+        <p>Computer & Office</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Electrical%20&%20Tools1.png?imbypass=true"
+        alt="error">
+        <p>Electric & Tools</p>
+       </div>
+       <div>
+        <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Appliances11.png?imbypass=true"
+        alt="error">
+        <p>Appliances</p>
+       </div>
+    </div>
+
+    <div id="container">
+        
+    </div>
+
+<hr style="margin-top: 30px;">
+
+    <div id="p_searches"></div>
+
+    <div id="p_searches2"></div>
+
+    <div class="benifits">
+        <div>
+             <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png"
+             alt="comany logo">
+             <h6>AFFORDABLE QUALITYFUN SHOPPING</h6>
+        </div>
+        <div>
+            <i class="fa-solid fa-store"></i>
+            <H6>high quality selection</H6>
+            <p>total product quality control for peacer of mind</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h6>Affordable price</h6>
+            <p>Factory dirct price for maximum savings</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-truck-fast"></i>
+            <h6>Express shipping</h6>
+            <p>Fast, reliable delivery from global werehouses</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-face-grin-stars"></i>
+            <h6>Worry-free After-sales</h6>
+            <p>Insant access to professional support</p>
+        </div>
+    </div>
+    <div id="news">
+        <div>
+            <p>Newsletter</p>
+            <input class="input" type="text" placeholder="Enert Email to get 50 Points">
+            <button class="btn">Subscribe</button>
+        </div>
+        <div id="media">
+            <i style= "margin-right: 20px;" class="fa-brands fa-instagram-square"></i>
+            <i style= "margin-right: 20px;" class="fa-brands fa-facebook"></i>
+            <i style= "margin-right: 20px;" class="fa-brands fa-facebook-messenger"></i>
+            <i style= "margin-right: 20px;" class="fa-brands fa-twitter"></i>
+            <i style= "margin-right: 20px;" class="fa-brands fa-youtube"></i>
+            <i style= "margin-right: 20px;" class="fa-brands fa-pinterest"></i>
+            <i style= "margin-right: 20px;" class="fa-solid fa-blog"></i>
+            <i style= "margin-right: 20px;" class="fa-solid fa-t"></i>
+        </div>
+    </div>
+    <div id="comeny_info">
+        <div>
+            <h5>Company Information</h5>
+            <p>About Us</p>
+            <p>Top searches</p>
+            <p>Privacy Police</p>
+            <p>Terms & Conditions</p>
+            <p>Intellectual Property Police</p>
+            <p>Testimonial</p>
+            <p>Contact Us</p>
+            <p>Report Security</p>
+            <p>Report Security Issue</p>
+            <p>Sell on Gearbest </p>
+            <p>Cookies Police<p>            
+            <p>Gearrbest Official Blog</p>
+        </div>
+        <div>
+            <h5>Costumer Service</h5>
+            <p>Shipping Information</p>
+            <p>FAQ For Newslatter</p>
+            <p>My Points</p>
+            <p>Warrenty and Retturn</p>
+            <p>Payment Methods</p>
+            <p>Deposit Expansion</p>
+            <p>FAQ & Support</p>
+            <p>Siteamp</p>
+            <p>Gearbest Wallwt Insuration</p>
+            <p>FAQs about COVID-19</p>
+        </div>
+        <div>
+            <h5>Other Business</h5>
+            <p>Paartnershio Programs</p>
+            <p>Associate Program</p>
+        </div>
+        <div id="social">
+            <h5>Download App!</h5>
+            <p>Save $3 with App & Nnews User Only</p>
+            <div id="both">
+                <div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
+                         alt="qr code">
+                    </div>
+                    <div>
+                        <div>
+                            <img src="data:image/png;base64,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" alt="app logo">
+                        </div>                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comp_names"></div>
+    <div id="comp_namestwo"></div>
+
+</body>
+</html>
+
+<script>
+   data=[
+
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16424/goods_img_big-v1/186cd6966d5f.jpg",
+    para:"Xiaomi Mi Intelligent Remote Control Car SUZUKI JIMN...",
+    price:"$ 51.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store", 
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878399324569661440/16517/goods_img-v1/a00cb9f65d8f.jpg",
+    para:"TRONXY CRUX 1 3D printer Presale 180X180X180mm...",
+    price:"$ 13.72",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16534/goods_img-v1/a164aeb8e460.jpg",
+    para:"Original Xiaomi Mi Band 7 / 7 NFC Smart Wristband 1.62...",
+    price:"$ 59.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6868955312079171584/16502/goods_img-v1/4e9e81a0cd1c.jpg",
+    para:"Prime 8CH 2K HD Wireless Security Camera System ...",
+    price:"$ 129.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16089/goods_img-v5/cf12af936537.jpg",
+    para:"Xiaomi Redmi Note 9 Pro 5G 6GB RAM 128GB ROM... ",
+    price:"$ 3655.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16486/goods_img-v5/a945baf7d9f2.jpg",
+    para:"In Stock UMIDIGI A11 Global Version Android 11 S...",
+    price:"$ 143.98",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16500/goods_img-v4/57c809aa41a9.jpg",
+    para:"Retro classic European and American style shortsleeved...",
+    price:"$ 13.72",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16403/goods_img-v1/167be3e01d5c.jpg",
+    para:"KERNUAP SunPower Folding 10W Solar Cells Charger 5V ...",
+    price:"$ 27.77",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16510/goods_img-v5/46b5587ae8ad.jpg",
+    para:"Replacement Soft Silicone Strap For Fitbit ace 2 Kids S...",
+    price:"$ 16.50",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6907015762637156352/16539/goods_img-v1/1b74396adc99.jpg",
+    para:"Dimmable Desk Reading Light Eye Protection Table .... ",
+    price:"$ 51.37",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16045/goods_img-v1/44f447b89cd6.jpg",
+    para:"Oclean Brush Head Replacehrs...",
+    price:"$ 31.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16369/goods_img-v3/ec3a5b9b9920.jpg",
+    para:"UMIDIGI Power 5 Global Version 128GB Smartphone... ",
+    price:"$219.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16450/goods_img-v3/980e8a024bfa.jpg",
+    para:"I500 TWS Wireless Bluetooth 5.0 Touch HiFi...",
+    price:"$ 16.688",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16034/goods_img-v1/c1d02761b774.jpg",
+    para:"ZTE Axon 20 5G Cell Phone 6.92 inch 90HZ 8GB RAM 2... ",
+    price:"$ 405.90",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16425/goods_img-v5/8a3081d5f97d.jpg",
+    para:"JJRC X19 /X19 PRO RC Drone 4K GPS Obstacle Avo...",
+    price:"$ 149.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15905/goods_img-v1/64cdb43f80b2.jpg",
+    para:"Switchable Wireless Home Security WIFI GSM GPRS...",
+    price:"$ 49.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15904/goods_img-v1/b017d09ce353.jpg",
+    para:"Posture Corrector Back Posture Brace Clavicle Sup... ",
+    price:"$ 21.64",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16135/goods_img-v1/235ac75bd34b.jpg",
+    para:"Global Version Xiaomi Mi 11 Smartphone 8GB RAM... ",
+    price:"$ 1149.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16152/goods_img-v1/8def620e18fd.jpg",
+    para:"Original Lenovo LP1S TWS Bluetooth Earphone Sports...",
+    price:"$ 16.49",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16043/goods_img-v2/9c3494b6348d.jpg",
+    para:"USB Powered Heated Vest Men Women Smart...",
+    price:"$ 34.58",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16056/goods_img-v1/50e18384ddd6.jpg",
+    para:"Dere R9 PRO 15.6inch Laptop 12GB RAM 256GB ROM In...",
+    price:"$ 399.27",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16486/goods_img-v3/170cfd448293.jpg",
+    para:"Global Version Xiaomi Redmi 9A Mobile Phone 9 A 2GB 3...",
+    price:"$ 153.78",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15948/goods_img-v2/f63710531d25.jpg",
+    para:"Smart Doorbell Camera Wifi Wireless Call Intercom Vide...",
+    price:"$  44.55",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16396/goods_img-v1/e9f7b8f381fa.jpg",
+    para:"HEPA Filter Side Brush Main Brush for Xiaomi 1s MI Rob...",
+    price:"$ 35.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16507/goods_img-v4/11793f7dafcb.jpg",
+    para:"20V Electric Lawn Mower Liion Battery Cordless Grass...",
+    price:"$ 154.78",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16487/goods_thumb_220-v1/9bd2c3157fee.jpg",
+    para:"martphone S22 Ultra 5G Cellular 6.8 Inch 6800mAh...",
+    price:"$ 129.50",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_thumb_220-v3/015537dd4004.jpg",
+    para:"New 2022 Xiaomi Mijia Electric Shaver 2 Floating H... ",
+    price:"$ 20.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_thumb_220-v1/066e93a396fc.jpg",
+    para:"iaomi Youpin Robot Vacuum Cleaner Smart Cellphones A... ",
+    price:"$ 119.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16520/goods_thumb_220-v1/ff833b42be00.jpg",
+    para:"Nylon Canvas Strap Wrist Band Replacement For Xiam...",
+    price:"$ 11.05",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16519/goods_thumb_220-v1/7345d0019adc.jpg",
+    para:"Watch Band for iWatch Series 7 SE 6 5 4 3 2 1 Apple Watc...",
+    price:"$ 6.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6878400698325856256/16535/goods_thumb_220-v1/408bf06e2bbd.jpg",
+    para:"2022 Xiaomi Mi Band 7 Blood Oxygen Sports Bracelet...",
+    price:"$ 46.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878400698325856256/16418/goods_thumb_220-v3/840915b9095d.jpg",
+    para:"2021 New Xiaomi Mijia Electric Inflator 1S Portable...",
+    price:"$ 45.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878400698325856256/16414/goods_thumb_220-v3/738b2172af87.jpg",
+    para:"NexTool Rechargeable Flashlight 5000mAh 2000m...",
+    price:"$ 32.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6878400698325856256/16426/goods_thumb_220-v1/5061a825237f.jpg",
+    para:"Portable Automatic Soap Dispenser 320ml Foam Hand...",
+    price:"$ 19.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6934083223668584448/16546/goods_thumb_220-v1/251094d549e1.jpg",
+    para:"MoreFine M6 11th Pocket PC Windows 10 Intel Celeron ...",
+    price:"$ 218.11",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16539/goods_thumb_220-v1/7a6e1bdf0f46.jpg",
+    para:"Haylou RS4 smart watches Global version Blood oxyg... ",
+    price:"$ 47.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16535/goods_thumb_220-v1/d22b84141728.jpg",
+    para:"MINGDA Magician Pro 3D Printer Auto Leveling Doubl... ",
+    price:"$635.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16434/goods_thumb_220-v1/0424fc2439a4.jpg",
+    para:"QIDI TECH X-Plus 3D Printer Large Size Intelligent Indu...",
+    price:"$ 679.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16434/goods_thumb_220-v1/0424fc2439a4.jpg",
+    para:"Original Xiaomi Mi Backpack 10L Urban Leisure Chest Co...",
+    price:"$6.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16417/goods_thumb_220-v3/21ff9307e5ee.jpg",
+    para:"Smart Watch Men 400Mah Big Battery Music Play... ",
+    price:"$ 33.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16423/goods_thumb_220-v2/f90c9abe33fb.jpg",
+    para:"H96 MAX RK3318 Smart TV Box Android 11 4G 64GB 3...",
+    price:"$ 45.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16416/goods_thumb_220-v1/7479afecf81b.jpg",
+    para:"Lenovo X3 Bluetooth Earphone Bone Conduction...",
+    price:"$ 19.90",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_thumb_220-v1/a9512fe0485a.jpg",
+    para:"Q8 Wireless Bluetooth Earphones LED Digital Di...",
+    price:"$ 17.48",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_thumb_220-v1/859fc9cb431a.jpg",
+    para:"M32B Wireless Bluetooth Earbud Sports Earphones In-...",
+    price:"$ 15.84",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_thumb_220-v1/9e2bd69876b9.jpg",
+    para:"DT7 Plus Smart Watch Series 7 Two Buttons NFC GPS Tra...",
+    price:"$ 29.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878028664286670848/16425/goods_thumb_220-v1/dbbcdadb0d1f.jpg",
+    para:"G20 TWS Mini Bluetooth 5.1 Headphones 9D Surround ...",
+    price:"$3.49",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6900386065325158400/16467/goods_thumb_220-v1/d7e25b62c349.jpg",
+    para:"Wireless Bone Conduction Bluetooth 5.1 Stereo Waterp...",
+    price:"$ 11.68",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16471/goods_thumb_220-v1/da3fb455c7ea.jpg",
+    para:"T900 PRO MAX New Fashion Mens Womens Sports Smart...",
+    price:"$ 17.68",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16469/goods_thumb_220-v1/3cb0b549bb5d.jpg",
+    para:"NIUBILITY B20 Electric Moped Bicycle Foding Bike...",
+    price:"$ 795.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16469/goods_thumb_220-v1/8741c2939368.jpg",
+    para:"i1000 tws Wireless Bluetooth Headset 5.0 Pop-Up Wireles...",
+    price:"$ 26.95",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v8/5cfe39f2fc03.jpg",
+    para:"New Smartwatch 2022 KOSPET TANK M1 Rugged...",
+    price:"$ 64.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6880467893788798976/16546/goods_thumb_220-v1/e0ede8519a77.jpg",
+    para:"New For Nintendo NS Wireless Jo-con Handle Colo...",
+    price:"$ 56.20",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v8/5cfe39f2fc03.jpg",
+    para:"TWS Bluetooth Earphones J88 Sports Wireless Headphones...",
+    price:"$ 23.80",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16545/goods_thumb_220-v1/1331604d0515.jpg",
+    para:"Electric Neck Massager Pulse Back 6 Modes Power Contr...",
+    price:"$ 22.80",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_thumb_220-v1/311bfd34aecb.jpg",
+    para:"A9 Mini Camera WiFi Camera 1080P HD Night Version... ",
+    price:"$ 10.60",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16416/goods_thumb_220-v1/9dbf47dbe530.jpg",
+    para:"Global Version I12 Pro Max 12GB 512GB Smartphone...",
+    price:"$ 120.30",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16473/goods_thumb_220-v1/41b471a4b273.jpg",
+    para:"2in1 Full HD 720P Car DVR Camera English-Russian Bili...",
+    price:"$ 71.98",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6507287161137004544/16407/goods_thumb_220-v1/d1f9cad3c2dc.jpg",
+    para:"Hiseeu 3MP PTZ IP Camera WIFI Wireless Smart Home ...",
+    price:"$ 22.50",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6919674405698334720/16528/goods_thumb_220-v1/4194c0705ff9.jpg",
+    para:"Hiseeu 3MP PTZ WIFI Camera Outdoor 1536P 1080... ",
+    price:"$ 55.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6919674405698334720/16528/goods_thumb_220-v2/00d92447bdfb.jpg",
+    para:"Baseus Air Outlet Phone Holder In Car Auto-locked G...",
+    price:"$ 16.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16407/goods_thumb_220-v1/e49d42522be1.jpg",
+    para:"HIYU Portable Mini Flashlight Q5+COB Led He...",
+    price:"$ 7.87",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16412/goods_thumb_220-v3/bce532926b51.jpg",
+    para:"Netac P500 Micro SD Card 512GB 256GB 64GB 32GB ...",
+    price:"$ 27.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16413/goods_thumb_220-v1/269f4c5405b3.jpg",
+    para:"E-ACE B28 B28P Car DVR 3 Cameras Lens 4.0 Inch Dash...",
+    price:"$ 127.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16406/goods_thumb_220-v1/623d9fe86b50.jpg",
+    para:"ZHIYU Portable Mini Flashlight Q5+COB Led He...",
+    price:"$ 178.49",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6701436345185419264/16389/goods_thumb_220-v1/060264a67456.jpg",
+    para:"actical Military Gloves Shooting Gloves Touch Desi...",
+    price:"$ 260.04",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+];
+
+data.forEach(function(elem){
+console.log(elem);
+
+let box = document.createElement("div");
+box.classList.add('card')
+ 
+let image = document.createElement("img");
+image.setAttribute("src",elem.img);
+
+let paragraph = document.createElement("p");
+paragraph.innerText = elem.para; 
+
+let rate = document.createElement("h3");
+rate.innerText = elem.price;
+
+let ogPrice = document.createElement("p");
+ogPrice.innerText = elem.og_price;
+
+
+const container=document.createElement('div')
+container.style.display='flex'
+container.style.justifyContent='space-between'
+const icon=document.createElement('span')
+icon.innerHTML=('<i class="fa-solid fa-store"></i>')
+// container.classList.add('storecontainer')
+let storename = document.createElement("p");
+storename.innerText = elem.stroe_name;
+const subContainer=document.createElement('div')
+subContainer.classList.add("subcon")
+subContainer.style.display='flex'
+subContainer.style.alignItems='center'
+subContainer.append(icon,storename)
+const cartIcon=document.createElement('span')
+cartIcon.innerHTML='<i class="fa-solid fa-cart-shopping"></i>'
+container.append(subContainer,cartIcon)
+
+cartIcon.addEventListener('click',(e)=>{
+  console.log(elem,'card data')
+  // save this data in localstorage
+
+  let productsArr=[
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6868971002878160896/16547/goods_thumb_220-v1/a47bb486f2f9.jpg",
+      para:"Stainless Steel Coffee Baking Machine Upgrade Electric Coffee Beans Roasting Machine Household Gas Coffee Roaster - United States Silver",
+      price:"$129.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16550/goods_thumb_220-v1/f38f62d5e0bf.jpg",
+      para:"Naturehike Ultralight Printed Picnic Blanket Moisture-Proof Picnic Mat Portable 670g Beach Mat Garden Park Washable Cushion - Cute Pet S",
+      price:"$31.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6911257965974712320/16496/goods_thumb_220-v1/8304dc96e91e.jpg",
+      para:"Brew Adjustable Temperature Kettle Electric Clear - Clear US M United States",
+      price:"$109.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16549/goods_thumb_220-v1/d87e35c0597d.jpg",
+      para:"Lenovo Tab P11 Global Firmware Xiaoxin Pad 11 inch 2K LCD Screen Wifi 4/6GB RAM 64/128GB ROM Snapdragon 662 Android 11 Tablet - P11 4G 64G WIFI China",
+      price:"$309.80"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16551/goods_thumb_220-v1/65a5adf0a328.jpg",
+      para:"Baseus C17 Type-C Earphones In Ear Hearphone Wired Headset With Mic For Smart Phone - White",
+      price:"$11.90"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6900783172733300736/16517/goods_thumb_220-v1/ef75b1a119a1.jpg",
+      para:"Global Version Xiaomi Redmi 9 Smartphone Media Tek Helio G80 6.53inch 5020 mAh Battery 13MP Rear Camera - Green 4GB 64GB France",
+      price:"$249"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16546/goods_thumb_220-v1/f5a5eba2c5b3.jpg",
+      para:"Laptop Case For Macbook Case Pro 13 A1278 Painted Case Cover - picture color 3",
+      price:"$27.86"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16551/goods_img_big-v1/0e4868f8ce66.jpg",
+      para:"Baseus WM01 Plus TWS Wireless Headphones TWS Bluetooth 5.0 Earphones Stereo Sports Waterproof Headsets with LED Digital Display - Black",
+      price:"$27.29"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6905960412823613440/16548/goods_thumb_220-v3/c5ebaad13531.jpg",
+      para:"Teclast P30HD 10.1 Inch Tablet 1920x1200 IPS 4GB RAM 64GB ROM Android 11 SC9863A Octa Core 4G Network Wifi GPS Type-C - P30HD And Case",
+      price:"$212.86"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6911257965974712320/16496/goods_img_big-v1/e72ab33a830b.jpg",
+      para:"Electric Water Kettle 34 Oz Stainless Steel - Green US M United States",
+      price:"$109.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6882689955441864704/16548/goods_thumb_220-v1/d585179323c5.jpg",
+      para:"Laptop Car Charger Adapter With USB Port for Magsafe2 MacBook Air Pro 45W 60W 85W Fast Charging and Mobile Phone - White 1pc China",
+      price:"$31.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16551/goods_thumb_220-v1/0af67cd0ed9a.jpg",
+      para:"RG106 PRO GPS Drone 8K Professional Dual HD Camera 5G FPV Obstacal Avoidance Brushless Motor Foldable RC Quadcopter Toys - Blue with 1 battery",
+      price:"$167.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6918609162020777984/16551/goods_thumb_220-v1/43efbdb66007.jpg",
+      para:"Bicycle Computer Camera Mount Holder with Out Front Bike Code Meter Extension Frame Flashlight Table Car Lamp Bracket for GoPro - Red",
+      price:"$7.70"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6933482338412326912/16551/goods_thumb_220-v1/6f33bf36f8e7.jpg",
+      para:"Electric Gooseneck Kettle Hot Water Kettle 100% Stainless Steel Inner for Pour-over Coffee & Tea 1200W 0.8L - US",
+      price:"$119.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6882689955441864704/16548/goods_thumb_220-v1/bd7b9a232850.jpg",
+      para:"USB Data Cable Charger Android Micro mini Type-C 5 in 1 Phone Magnetic Fast Charging Wire For samsung iPhone Apple Watch Series - White 30cm 1 pcs",
+      price:"$10.30"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6868971002878160896/16547/goods_thumb_220-v1/a47bb486f2f9.jpg",
+      para:"Stainless Steel Coffee Baking Machine Upgrade Electric Coffee Beans Roasting Machine Household Gas Coffee Roaster - United States Silver",
+      price:"$129.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6933482338412326912/16551/goods_thumb_220-v1/2d78b55fd896.jpg",
+      para:"Hair Curler Nityrliv Automatic Curling Iron Auto Rotating Curling Wand Wavy Look Curly Hair Curling Tools Fast Heating 4 Temps 3 Timer Setting - US",
+      price:"$119.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16549/goods_thumb_220-v1/d87e35c0597d.jpg",
+      para:"Lenovo Tab P11 Global Firmware Xiaoxin Pad 11 inch 2K LCD Screen Wifi 4/6GB RAM 64/128GB ROM Snapdragon 662 Android 11 Tablet - P11 4G 64G WIFI China",
+      price:"$309.80"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16542/goods_thumb_220-v1/96da6894d681.jpg",
+      para:"2022 New Mini Drone K7 4K HD Camera Wifi FPV 4 Sides Infrared Obstacle Avoidance Altitude Hold RC Quadcopter Helicopter Toys - Orange with 1 battery",
+      price:"$44.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6918609162020777984/16551/goods_thumb_220-v1/48bd33088b97.jpg",
+      para:"Mountain Bicycle Computer Mount Holder with Out Front Bike Stem Extension Support Holder for Garmin Bryton Cateye GoPro Light - Black",
+      price:"$5.13"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16546/goods_thumb_220-v1/1794e6cad276.jpg",
+      para:"Naturehike Trekking Poles Ultralight 5 Sections Walking Stick Adjustable Telescopic Hiking Stick External Lock Poles - Green 1pc",
+      price:"$16.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16545/goods_thumb_220-v1/0f2efc92bd20.jpg",
+      para:"Laptop Case For Macbook Case Retina 12 A1534 Painted Case Cover - picture color 3 For MacBook Retina 12 A1534",
+      price:"$27.86"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16546/goods_thumb_220-v2/e9418e49859b.jpg",
+      para:"Naturehike Ango Automatic Camping Tent 3-4 People Tents UPF 50+ One-Touch Travel Tent 210T Fast Build Family Camping AUTO Tent - Khaki",
+      price:"$179.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16546/goods_thumb_220-v1/42d126bedac7.jpg",
+      para:"crystal shell Laptop Case For Macbook Case Air 13 A1466 A1369 Painted Case Cover - dark blue For MacBook Air 13 A1369 A1466",
+      price:"$21.56"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16546/goods_thumb_220-v1/a4f99edf2937.jpg",
+      para:"Naturehike Envelope Hooded Cotton Sleeping Bag Washable Splicable Double-Person Tent Camping Portable Sleeping Bag - Green M180",
+      price:"$53.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16545/goods_thumb_220-v1/85d71ef9cc80.jpg",
+      para:"V1 Mini HD Projector Native 1280 720p Full HD Support Video Game Play Portable Projector - Basic Edition-UK",
+      price:"$69.89"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6916810791849226240/16548/goods_img_big-v1/0109f9cc675c.jpg",
+      para:"Gogo popular multifunctional business sports leisure fashion waterproof quartz watch - Black steel with rose black China",
+      price:"$64.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6916810791849226240/16544/goods_img_big-v1/966bffc51f17.jpg",
+      para:"Cool creative single needle personalized watch female couple quartz waterproof - gules China",
+      price:"$52.90"
+     },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6916810791849226240/16544/goods_img_big-v1/a500e4b0cb04.jpg",
+      para:"Cool fashion creative net band women s watch women s two color belt rose gold women s watch cross border - Belt Rose Green China",
+      price:"$54.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6916810791849226240/16544/goods_img_big-v1/cebda42a23d3.jpg",
+      para:"Cool net band women s watch rose gold silver Apricot Leaf Pattern women s fashion waterproof quartz watch - brown China",
+      price:"$59.90"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6868971002878160896/16547/goods_thumb_220-v1/8237964b5d99.jpg",
+      para:"Retro Coffee Maker Italian Electric Espresso Coffee Machine Automatic Steam Milk Frother 20bar Home Appliances - Blue United States",
+      price:"$129.00"   
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16548/goods_thumb_220-v1/f68a10fdb0ae.jpg",
+      para:"Naturehike Nylon TPU Camping Mat Sleeping Pad Lightweight Moistureproof Air Mattress Portable Inflatable Mattress - Blue",
+      price:"$44.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6878028664286670848/16548/goods_thumb_220-v1/7a6d0e906a8a.jpg",
+      para:"Crystal ball Crystal Astronaut Planet Globe 3D Laser Engraved Solar System Ball with Touch Switch LED Light Base Astronomy Gif - deer China",
+      price:"$16.56"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6933482338412326912/16551/goods_img_big-v1/2c0cdf104742.jpg",
+      para:"Wavytalk 5 in 1 Curling Wand Set with Curling Brush and 4 Interchangeable Ceramic Curling Wand Curling Iron Instant Heat Up Dual Voltage Hair Curler - US United States Rose Gold	105077334713346496",
+      price:"$109.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/store/6933482338412326912/16551/goods_img_big-v1/0f63949c218e.jpg",
+      para:"Portable Electric Kettle Temperature Control Keep Warm Tea Maker With Infuser Electric Time Setting 450ml Travel Kettle Electric. - US",
+      price:"$109.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img-v1/126354806df6.jpg",
+      para:"Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen For Office Signing Pens Smooth Switzerland Refill Mikuni For School Pen - Black China 1 PCS",
+      price:"$2.59"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img_big-v5/6233d35f6f8a.jpg",
+      para:"Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone Unlocked 2022 5G Mobile Phones Cheap Android Xaiomi Telephone Xiomi - Black 16G 512GB",
+      price:"$107.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16545/goods_img_big-v3/49bbbbea2c5b.jpg",
+      para:"Xiaomi Fan 2 Smart Standing double layer fan blade Portable rechargeable Dual natural wind Intelligent Mihome app control DC inverter motor - White Germany",
+      price:"$69.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16488/goods_img_big-v3/d238ad6a3d2a.jpg",
+      para:"2022 New Smartphone 7.3 Inch MIX4 72MP Camera Unlock Mobile Phones Celular Cellphone Qualcomm 888+ - Black 4GB 128GB",
+      price:"$114.30"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_img_big-v3/31d0d9d6c843.jpg",
+      para:"A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision Wireless Remote Monitor Mini Camera - Black - China Black",
+      price:"$10.68"   
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16519/goods_img-v1/ad5af71dbbf9.jpg",
+      para:"WalkingPad R2 Treadmill Smart APP LED Touch Panel Remote Control Running-Walking Mode - Black Poland",
+      price:"$585.00"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16488/goods_img-v1/78ad914ae7ca.jpg",
+      para:"4-color TFT screen Finger Clip Type Oximeter Pulse Oximetry Monitor - White",
+      price:"$8.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img_big-v3/a06e3d5ad873.jpg",
+      para:"Original Xiaomi Backpack 7L/10L/15L/20L Travel Light Weight Small Size Backpack Unisex Urban Casual Sports Chest Pack Bags - Black China 20L",
+      price:"$13.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16488/goods_img_big-v5/b1790ebe72cd.jpg",
+      para:"Xiaomi Redmi Buds 3 Lite TWS Bluetooth 5.2 Earphone Headset IP54 18 Hours Battery Life Mi Ture Wireless Earbuds 3 Youth Edition - Redmi Buds 3 Lite",
+      price:"$20.86"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16531/goods_img_big-v1/ea9ddbe7643e.jpg",
+      para:"Xiaomi 2022 Bluetooth 5.0 Headsets Wireless Earphone LED Display With Mic Hifi Stereo Sport Earbuds Earphones Bass - White China",
+      price:"$9.90"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6904007303549349888/16474/goods_img-v1/394534e30d4e.jpg",
+      para:"QIDI TECH X-MAX Large Size Intelligent Industrial Grade 3D Printer - DE",
+      price:"$949.00"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6866331933228593152/16418/goods_img-v1/42f52c167490.jpg",
+      para:"Yeelight 1SE E27 6W RGBW AC 100 - 240V Smart LED Bulb Colourful Light Version White 3PCS - 6w 3pcs",
+      price:"$24.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16508/goods_img-v1/83e81faaf67b.jpg",
+      para:"V9 Wireless Bluetooth CSR V4.1 Headset Sports Headphone Handsfree Earphone Universal Bluetooth Sports Bass Earbuds with Mic - Black",
+      price:"$11.90"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16486/goods_img-v1/965097e8a620.jpg",
+      para:"Aqara Smart Temperature Humidity Sensor Zigbee Wireless Connection Thermometer Hygrometer Apple Homekit Mi Home APP Control Xiaomi Ecosystem Product - White",
+      price:"$17.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16456/goods_img-v1/937ce184d834.jpg",
+      para:"Midea S8+ Robot Vacuum Cleaner for Home Electrolysis Disinfection Vibration Mopping Smart Vacuum Cleaner Dust Collect Station - Black China",
+      price:"$1260.23"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/eca3dcc2ab20.jpg",
+      para:"L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter with 4K Camera Professional Brushless Toys - Orange 2Battery Bag",
+      price:"$86.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_img_big-v1/8fc8853ff3b3.jpg",
+      para:"Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2 Earphone In Ear Stereo Bass Earphone Ture Wireless Earbuds Redmi Airdots3 - Blue China",
+      price:"$19.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_img-v3/ce8cec017eca.jpg",
+      para:"Original Xiaomi Mitu Cubes Spinner Finger Bricks Intelligence Toys Smart Fidget Magic Cubes Infinity Toys Anti Stress Anxiety - White China",
+      price:"$9.99"
+    },
+    { img:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_img_big-v5/2f380d04f8f3.jpg",
+      para:"Original Xiaomi Mi Airdots Air 2 SE TWS Bluetooth Earphone Wireless Headphone Dual SBC/AAC Tap Stereo Control Dual MIC - White China",
+      price:"$25.99"
+    },
+    { img:"	https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16204/goods_img_big-v1/95b7727db8f7.jpg",
+      para:"Mijia Honeywell Fire Alarm Smoke Detector Sensor Audible Visual Alarm Notication Work With Mi Home APP By Phone - White",
+      price:"$39.99"
+     },
+     {
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16424/goods_img_big-v1/186cd6966d5f.jpg",
+    para:"Xiaomi Mi Intelligent Remote Control Car SUZUKI JIMN...",
+    price:"$ 51.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store", 
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878399324569661440/16517/goods_img-v1/a00cb9f65d8f.jpg",
+    para:"TRONXY CRUX 1 3D printer Presale 180X180X180mm...",
+    price:"$ 13.72",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16534/goods_img-v1/a164aeb8e460.jpg",
+    para:"Original Xiaomi Mi Band 7 / 7 NFC Smart Wristband 1.62...",
+    price:"$ 59.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6868955312079171584/16502/goods_img-v1/4e9e81a0cd1c.jpg",
+    para:"Prime 8CH 2K HD Wireless Security Camera System ...",
+    price:"$ 129.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16089/goods_img-v5/cf12af936537.jpg",
+    para:"Xiaomi Redmi Note 9 Pro 5G 6GB RAM 128GB ROM... ",
+    price:"$ 3655.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16486/goods_img-v5/a945baf7d9f2.jpg",
+    para:"In Stock UMIDIGI A11 Global Version Android 11 S...",
+    price:"$ 143.98",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16500/goods_img-v4/57c809aa41a9.jpg",
+    para:"Retro classic European and American style shortsleeved...",
+    price:"$ 13.72",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16403/goods_img-v1/167be3e01d5c.jpg",
+    para:"KERNUAP SunPower Folding 10W Solar Cells Charger 5V ...",
+    price:"$ 27.77",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16510/goods_img-v5/46b5587ae8ad.jpg",
+    para:"Replacement Soft Silicone Strap For Fitbit ace 2 Kids S...",
+    price:"$ 16.50",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6907015762637156352/16539/goods_img-v1/1b74396adc99.jpg",
+    para:"Dimmable Desk Reading Light Eye Protection Table .... ",
+    price:"$ 51.37",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16045/goods_img-v1/44f447b89cd6.jpg",
+    para:"Oclean Brush Head Replacehrs...",
+    price:"$ 31.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16369/goods_img-v3/ec3a5b9b9920.jpg",
+    para:"UMIDIGI Power 5 Global Version 128GB Smartphone... ",
+    price:"$219.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16450/goods_img-v3/980e8a024bfa.jpg",
+    para:"I500 TWS Wireless Bluetooth 5.0 Touch HiFi...",
+    price:"$ 16.688",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16034/goods_img-v1/c1d02761b774.jpg",
+    para:"ZTE Axon 20 5G Cell Phone 6.92 inch 90HZ 8GB RAM 2... ",
+    price:"$ 405.90",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16425/goods_img-v5/8a3081d5f97d.jpg",
+    para:"JJRC X19 /X19 PRO RC Drone 4K GPS Obstacle Avo...",
+    price:"$ 149.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15905/goods_img-v1/64cdb43f80b2.jpg",
+    para:"Switchable Wireless Home Security WIFI GSM GPRS...",
+    price:"$ 49.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15904/goods_img-v1/b017d09ce353.jpg",
+    para:"Posture Corrector Back Posture Brace Clavicle Sup... ",
+    price:"$ 21.64",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16135/goods_img-v1/235ac75bd34b.jpg",
+    para:"Global Version Xiaomi Mi 11 Smartphone 8GB RAM... ",
+    price:"$ 1149.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16152/goods_img-v1/8def620e18fd.jpg",
+    para:"Original Lenovo LP1S TWS Bluetooth Earphone Sports...",
+    price:"$ 16.49",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16043/goods_img-v2/9c3494b6348d.jpg",
+    para:"USB Powered Heated Vest Men Women Smart...",
+    price:"$ 34.58",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16056/goods_img-v1/50e18384ddd6.jpg",
+    para:"Dere R9 PRO 15.6inch Laptop 12GB RAM 256GB ROM In...",
+    price:"$ 399.27",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16486/goods_img-v3/170cfd448293.jpg",
+    para:"Global Version Xiaomi Redmi 9A Mobile Phone 9 A 2GB 3...",
+    price:"$ 153.78",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/15948/goods_img-v2/f63710531d25.jpg",
+    para:"Smart Doorbell Camera Wifi Wireless Call Intercom Vide...",
+    price:"$  44.55",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16396/goods_img-v1/e9f7b8f381fa.jpg",
+    para:"HEPA Filter Side Brush Main Brush for Xiaomi 1s MI Rob...",
+    price:"$ 35.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16507/goods_img-v4/11793f7dafcb.jpg",
+    para:"20V Electric Lawn Mower Liion Battery Cordless Grass...",
+    price:"$ 154.78",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16487/goods_thumb_220-v1/9bd2c3157fee.jpg",
+    para:"martphone S22 Ultra 5G Cellular 6.8 Inch 6800mAh...",
+    price:"$ 129.50",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_thumb_220-v3/015537dd4004.jpg",
+    para:"New 2022 Xiaomi Mijia Electric Shaver 2 Floating H... ",
+    price:"$ 20.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_thumb_220-v1/066e93a396fc.jpg",
+    para:"iaomi Youpin Robot Vacuum Cleaner Smart Cellphones A... ",
+    price:"$ 119.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16520/goods_thumb_220-v1/ff833b42be00.jpg",
+    para:"Nylon Canvas Strap Wrist Band Replacement For Xiam...",
+    price:"$ 11.05",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6917171477716594688/16519/goods_thumb_220-v1/7345d0019adc.jpg",
+    para:"Watch Band for iWatch Series 7 SE 6 5 4 3 2 1 Apple Watc...",
+    price:"$ 6.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6878400698325856256/16535/goods_thumb_220-v1/408bf06e2bbd.jpg",
+    para:"2022 Xiaomi Mi Band 7 Blood Oxygen Sports Bracelet...",
+    price:"$ 46.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878400698325856256/16418/goods_thumb_220-v3/840915b9095d.jpg",
+    para:"2021 New Xiaomi Mijia Electric Inflator 1S Portable...",
+    price:"$ 45.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878400698325856256/16414/goods_thumb_220-v3/738b2172af87.jpg",
+    para:"NexTool Rechargeable Flashlight 5000mAh 2000m...",
+    price:"$ 32.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6878400698325856256/16426/goods_thumb_220-v1/5061a825237f.jpg",
+    para:"Portable Automatic Soap Dispenser 320ml Foam Hand...",
+    price:"$ 19.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6934083223668584448/16546/goods_thumb_220-v1/251094d549e1.jpg",
+    para:"MoreFine M6 11th Pocket PC Windows 10 Intel Celeron ...",
+    price:"$ 218.11",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16539/goods_thumb_220-v1/7a6e1bdf0f46.jpg",
+    para:"Haylou RS4 smart watches Global version Blood oxyg... ",
+    price:"$ 47.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16535/goods_thumb_220-v1/d22b84141728.jpg",
+    para:"MINGDA Magician Pro 3D Printer Auto Leveling Doubl... ",
+    price:"$635.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16434/goods_thumb_220-v1/0424fc2439a4.jpg",
+    para:"QIDI TECH X-Plus 3D Printer Large Size Intelligent Indu...",
+    price:"$ 679.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16434/goods_thumb_220-v1/0424fc2439a4.jpg",
+    para:"Original Xiaomi Mi Backpack 10L Urban Leisure Chest Co...",
+    price:"$6.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16417/goods_thumb_220-v3/21ff9307e5ee.jpg",
+    para:"Smart Watch Men 400Mah Big Battery Music Play... ",
+    price:"$ 33.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16423/goods_thumb_220-v2/f90c9abe33fb.jpg",
+    para:"H96 MAX RK3318 Smart TV Box Android 11 4G 64GB 3...",
+    price:"$ 45.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16416/goods_thumb_220-v1/7479afecf81b.jpg",
+    para:"Lenovo X3 Bluetooth Earphone Bone Conduction...",
+    price:"$ 19.90",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_thumb_220-v1/a9512fe0485a.jpg",
+    para:"Q8 Wireless Bluetooth Earphones LED Digital Di...",
+    price:"$ 17.48",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_thumb_220-v1/859fc9cb431a.jpg",
+    para:"M32B Wireless Bluetooth Earbud Sports Earphones In-...",
+    price:"$ 15.84",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878026654363611136/16417/goods_thumb_220-v1/9e2bd69876b9.jpg",
+    para:"DT7 Plus Smart Watch Series 7 Two Buttons NFC GPS Tra...",
+    price:"$ 29.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878028664286670848/16425/goods_thumb_220-v1/dbbcdadb0d1f.jpg",
+    para:"G20 TWS Mini Bluetooth 5.1 Headphones 9D Surround ...",
+    price:"$3.49",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/store/6900386065325158400/16467/goods_thumb_220-v1/d7e25b62c349.jpg",
+    para:"Wireless Bone Conduction Bluetooth 5.1 Stereo Waterp...",
+    price:"$ 11.68",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16471/goods_thumb_220-v1/da3fb455c7ea.jpg",
+    para:"T900 PRO MAX New Fashion Mens Womens Sports Smart...",
+    price:"$ 17.68",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16469/goods_thumb_220-v1/3cb0b549bb5d.jpg",
+    para:"NIUBILITY B20 Electric Moped Bicycle Foding Bike...",
+    price:"$ 795.00",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16469/goods_thumb_220-v1/8741c2939368.jpg",
+    para:"i1000 tws Wireless Bluetooth Headset 5.0 Pop-Up Wireles...",
+    price:"$ 26.95",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v8/5cfe39f2fc03.jpg",
+    para:"New Smartwatch 2022 KOSPET TANK M1 Rugged...",
+    price:"$ 64.99",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6880467893788798976/16546/goods_thumb_220-v1/e0ede8519a77.jpg",
+    para:"New For Nintendo NS Wireless Jo-con Handle Colo...",
+    price:"$ 56.20",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v8/5cfe39f2fc03.jpg",
+    para:"TWS Bluetooth Earphones J88 Sports Wireless Headphones...",
+    price:"$ 23.80",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16545/goods_thumb_220-v1/1331604d0515.jpg",
+    para:"Electric Neck Massager Pulse Back 6 Modes Power Contr...",
+    price:"$ 22.80",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_thumb_220-v1/311bfd34aecb.jpg",
+    para:"A9 Mini Camera WiFi Camera 1080P HD Night Version... ",
+    price:"$ 10.60",
+    og_price:"RRP: $264",
+    stroe_name:"Sky Store",
+},
+{
+    img:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16416/goods_thumb_220-v1/9dbf47dbe530.jpg",
+        para:"Global Version I12 Pro Max 12GB 512GB Smartphone...",
+        price:"$ 120.30",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16473/goods_thumb_220-v1/41b471a4b273.jpg",
+        para:"2in1 Full HD 720P Car DVR Camera English-Russian Bili...",
+        price:"$ 71.98",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6507287161137004544/16407/goods_thumb_220-v1/d1f9cad3c2dc.jpg",
+        para:"Hiseeu 3MP PTZ IP Camera WIFI Wireless Smart Home ...",
+        price:"$ 22.50",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6919674405698334720/16528/goods_thumb_220-v1/4194c0705ff9.jpg",
+        para:"Hiseeu 3MP PTZ WIFI Camera Outdoor 1536P 1080... ",
+        price:"$ 55.00",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6919674405698334720/16528/goods_thumb_220-v2/00d92447bdfb.jpg",
+        para:"Baseus Air Outlet Phone Holder In Car Auto-locked G...",
+        price:"$ 16.99",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16407/goods_thumb_220-v1/e49d42522be1.jpg",
+        para:"HIYU Portable Mini Flashlight Q5+COB Led He...",
+        price:"$ 7.87",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16412/goods_thumb_220-v3/bce532926b51.jpg",
+        para:"Netac P500 Micro SD Card 512GB 256GB 64GB 32GB ...",
+        price:"$ 27.99",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16413/goods_thumb_220-v1/269f4c5405b3.jpg",
+        para:"E-ACE B28 B28P Car DVR 3 Cameras Lens 4.0 Inch Dash...",
+        price:"$ 127.99",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16406/goods_thumb_220-v1/623d9fe86b50.jpg",
+        para:"ZHIYU Portable Mini Flashlight Q5+COB Led He...",
+        price:"$ 178.49",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    {
+        img:"https://gloimg.gbtcdn.com/soa/gb/item/6701436345185419264/16389/goods_thumb_220-v1/060264a67456.jpg",
+        para:"actical Military Gloves Shooting Gloves Touch Desi...",
+        price:"$ 260.04",
+        og_price:"RRP: $264",
+        stroe_name:"Sky Store",
+    },
+    ];  
+    
+    let productsCount=document.getElementById("container");
+        let addCartLS=JSON.parse(localStorage.getItem("cart-page"))||[];
+        function displayProducts(productsArr){
+        productsCount.innerHTML="";
+        productsArr.forEach(function(el){
+        let product= document.createElement("div");
+        let discount=document.createElement("span")
+        discount.innerText="20% OFF";
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let para=document.createElement("p");
+        para.innerText=el.para;
+        let para1=document.createElement("p");
+        para1.innerText=el.price;
+        let addToCart=document.createElement("button");
+        addToCart.innerText="Add To Cart";
+        addToCart.addEventListener("click", function(){
+        window.location.href="cart.html"
+        if(addToCartFun(el.para)===true){
+            
+            alert("Product Added Successfully")
+            addCartLS.push(el);
+            localStorage.setItem("cart-page",JSON.stringify(addCartLS))
+        }
+        else{
+            alert("Product  already in the cart")
+        }
+            })
+        product.append(discount, img,para,para1,addToCart);
+        productsCount.append(product);
+        });
+        }
+
+        displayProducts(productsArr)
+
+        function addToCartFun(para){
+        for(let i=0;i<addCartLS.length;i++)
+        {
+            if(addCartLS[i].para == para){
+            return false;
+            }
+        }
+        return true;
+        }
+    //alert user 
+        
+
+    })
+
+
+
+
+
+    box.append(image,paragraph,rate,ogPrice,container);
+
+    document.querySelector("#container").append(box);
+    });
+
+    popular_searches=[
+        {p:"popular_searches:"},
+        {p:"ixaomi poco m3"},
+        {p:"ortur master 2 20w"},
+        {p:"mobiles phone"},
+        {p:"led bed"},
+        {p:"phone cases"},
+        {p:"men's down coat"},
+        {p:"cell phones "},
+        {p:"xiaomi phone"}];
+    popular_searches.forEach(function(elem){
+        let box2=document.createElement("div");
+        
+        let pop_sec=document.createElement("p");
+        pop_sec.innerText=elem.p;
+
+        box2.append(pop_sec);
+
+        document.querySelector("#p_searches").append(box2);
+    });
+
+    popular_searches2=[
+            {p:"nota 10"},
+            {p:"summer fasion"},
+            {p:"tpu case"},
+            {p:"hawkeys accesories"},
+            {p:"white tablets"},
+            {p:"men's white tops"},
+    ];
+
+    popular_searches2.forEach(function(elem){
+        let box3=document.createElement("div");
+        
+        let pop_sec2=document.createElement("p");
+        pop_sec2.innerText=elem.p;
+
+        box3.append(pop_sec2);
+
+        document.querySelector("#p_searches2").append(box3);
+    });
+
+    company_name=[
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/money.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/m.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/rese.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/paypal.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/visa.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/a.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ww.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/jcb.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/dic.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ya.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/d.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/webmoney.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/oxxo.png",
+        },
+    ];
+
+    company_name.forEach(function(elem){
+
+        let box4=document.createElement("div");
+
+        let lastimage=document.createElement("img");
+        lastimage.setAttribute("src",elem.img);
+
+        box4.append(lastimage);
+
+        document.querySelector("#comp_names").append(box4);
+        
+    });
+
+    company_names=[
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/bo.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/postepay.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/giropay.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/sofort.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/eps.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/p.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/pago.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png",
+        },
+        {
+            img:"https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png",
+        }
+    ];
+
+    company_names.forEach(function(elem){
+
+    let box5=document.createElement("div");
+
+    let lastimages=document.createElement("img");
+    lastimages.setAttribute("src",elem.img);
+
+    box5.append(lastimages);
+
+document.querySelector("#comp_namestwo").append(box5);
+});
+</script>
