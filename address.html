@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>address</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 400px;
+            text-align: right;
+        }
+        
+        input {
+            padding: 5px 120px;
+        }
+        
+        h1 {
+            margin-left: 400px;
+            margin-bottom: 50px;
+        }
+        
+        .ss {
+            padding: 5px 140px;
+        }
+        
+        #submit {
+            display: block;
+            margin: auto;
+            padding: 7px;
+            background-color: yellow;
+            color: black;
+            font-size: 20px;
+            border: none
+        }
+        
+        #code {
+            width: 70px;
+            height: 30px;
+            background-color: gainsboro;
+        }
+        
+        #mob {
+            padding: 5px 120px;
+        }
+        
+        #rr {
+            width: 200px;
+        }
+        
+        #mail {
+            display: inline-block;
+            margin: auto;
+        }
+        
+        #details {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div id="container">
+            <div id="logo">
+                <a href="https://www.gearbest.com/"> <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="Error"></a>
+                <hr>
+            </div>
+            <h1>Add New Address</h1>
+            <div id="details">
+                <label>First Name: </label> <input type="text" id="fname" required maxlength="20"><br><br>
+                <label>Last Name</label> <input type="text" id="lname" required><br><br>
+                <label>Address Line1:</label> <input type="text" id="address" required placeholder="Street address,flat,suite,etc." maxlength="20"><br><br>
+                <label>Address Line2:</label> <input type="text" id="address2" required placeholder="" maxlength="20"><br><br>
+                <label>Country/Region</label>
+                <select name="country" id="country" class="ss">
+                    <option value="">Choose Country</option>
+                    <option value="india">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <!-- <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Nepal">Nepal</option> -->
+                </select><br><br>
+                <label>State/Province</label>
+                <select name="state" id="state" class="ss">
+                    <option value="">Andhra pradesh</option>
+                    <option value="">Arunachal pradesh</option>
+                    <option value="">Assam</option>
+                    <option value="">Goa</option>
+                    <option value="">Maharashtra</option>
+                    <option value="">Gujarat</option>
+                   
+                </select><br><br>
+                <label>City:</label> <input type="text" id="city" required maxlength="20"><br><br>
+                <label>Zip/postal code:</label> <input type="text" id="zcode" required maxlength="20"><br><br>
+                <label>Phone Number:</label>
+                <!-- <select name="" id="code">
+                    <option value="">+1</option>
+                    <option value="">+213</option>
+                    <option value="">+91</option>
+                    <option value="">+63</option>
+                    <option value="">+376</option>
+                    <option value="">+1684</option>
+                    <option value="">+54</option> -->
+                </select><input type="" id="mob"><br><br>
+                <label>E-mail Address:</label><input type="email" id="email" maxlength="30"><br><br>
+
+                <!-- <center> <input type="checkbox" id="mail" name="mail" maxlength="20">Set as my default address
+                </center> -->
+                <input type="submit" value="comfirm" id="submit">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", subfunction)
+
+    let data = [];
+
+    function subfunction() {
+        event.preventDefault();
+
+        let obj = {
+
+            fname: document.querySelector("#fname").value,
+
+            lname: document.querySelector("#lname").value,
+
+            address: document.querySelector("#address").value,
+
+            address2: document.querySelector("#address2").value,
+
+            country: document.querySelector("#country").value,
+
+            state: document.querySelector("#state").value,
+
+            city: document.querySelector("#city").value,
+
+            zcode: document.querySelector("#zcode").value,
+
+
+
+            mob: document.querySelector("#mob").value,
+
+            email: document.querySelector("#email").value,
+        };
+        console.log(obj)
+        data.push(obj);
+
+        localStorage.setItem("addressdata", JSON.stringify(data))
+
+
+    }
+
+    // function populate(s1, s2) {
+    //     let s1 = document.getElementById(s1);
+    //     let s2 = document.getElementById(s2);
+
+    //     s2.innerHTML = "";
+    //     if (s1.value == "india") {
+    //         let optionarray = ['delhi|Delhi', 'mumbai|Mumbai ', 'banglore|Banglore', 'hydrabad|Hydrabad'];
+    //     } else if
+
+    //     (s1.value == "China") {
+    //         let optionarray = ['new york|New York', 'los angeles|Los Angeles', 'chicago|Chicago', 'houston|Houstan']
+    //     }
+    //     for (let option in optionarray) {
+    //         let pair = optionarray[option].split("|");
+
+    //         let newoption = document.createElement("option");
+
+    //         newoption.value = pair[0];
+    //         newoption.innerHTML = pair[1];
+
+    //         s2.option.add(newoption)
+    //     }
+</script>
