@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,25 @@
     <title>Cart Page</title>
     <link rel="stylesheet" href="cartpage.css">
 </head>
+
 <body>
     <div id="ctnav">
-    <div>
-        <img onClick="Homepage()" style="cursor: pointer;" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
-    </div>
-    <div>
-        <p>Ship to </p>
-        <img src="https://uidesign.gbtcdn.com/GB/app/2018/flag_png/us.png" alt="">
-        <p>/</p>
-        <select  id="">
+        <div>
+            <a href="index.html"> <img style="cursor: pointer;" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt=""></a>
+        </div>
+        <div>
+            <p>Ship to </p>
+            <img src="https://uidesign.gbtcdn.com/GB/app/2018/flag_png/us.png" alt="">
+            <p>/</p>
+            <select id="">
             <option value="USD">USD</option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
         </select>
+        </div>
     </div>
-</div>
     <h1 id="cartprice"></h1>
     <div id="cartselect">
         <div>
@@ -32,7 +34,7 @@
         </div>
         <div id="space">
             <p>Unit Price</p>
-           
+
             <p>Operation</p>
         </div>
     </div>
@@ -40,50 +42,54 @@
     <button id="addbutton"><h1>Check Out</h1></button>
 </body>
 <script>
-    let btn=document.querySelector("#addbutton").addEventListener("click",function(){
-       window.location.href="address.html";
+    let btn = document.querySelector("#addbutton").addEventListener("click", function() {
+        window.location.href = "address.html";
     })
-    function Homepage(){
-        window.location.href="homepage.html";
+
+    function Homepage() {
+        window.location.href = "index.html";
     }
-    let getCartItem=JSON.parse(localStorage.getItem("cartpage"));
-    let totalPrice=0;
+    let getCartItem = JSON.parse(localStorage.getItem("cartpage"));
+    let totalPrice = 0;
     displayCartItem(getCartItem)
-        function displayCartItem(getCartItem){
-            totalPrice=0;
-        getCartItem.forEach(function(el,index){
+
+    function displayCartItem(getCartItem) {
+        totalPrice = 0;
+        getCartItem.forEach(function(el, index) {
             totalPrice += Number(el.price);
-          let box=document.createElement("div");
-          let img=document.createElement("img")
-          img.setAttribute("src",el.img);
-         let para=document.createElement("p");
-         para.innerText=el.para;
-        
-         box.setAttribute("id","product");
-       box.append(img,para);
-         let box1=document.createElement("div");
-         let para1=document.createElement("p");
-            para1.innerText=el.price
-       let para2=document.createElement("p");
-       para2.innerText="DELETE"
-      
-       para2.style.cursor="pointer"
-       para2.addEventListener("click",function(){
-        deleteitem(index)
-       })
-     
-       box1.setAttribute("id","product1");
-       box1.append(para1,para2);
-       document.querySelector("#addtocart").append(box,box1);
-      
+            let box = document.createElement("div");
+            let img = document.createElement("img")
+            img.setAttribute("src", el.img);
+            let para = document.createElement("p");
+            para.innerText = el.para;
+
+            box.setAttribute("id", "product");
+            box.append(img, para);
+            let box1 = document.createElement("div");
+            let para1 = document.createElement("p");
+            para1.innerText = el.price
+            let para2 = document.createElement("p");
+            para2.innerText = "DELETE"
+
+            para2.style.cursor = "pointer"
+            para2.addEventListener("click", function() {
+                deleteitem(index)
+            })
+
+            box1.setAttribute("id", "product1");
+            box1.append(para1, para2);
+            document.querySelector("#addtocart").append(box, box1);
+
         })
-      
+
     }
-   function deleteitem(index){
-    getCartItem.splice(index,1);
-    localStorage.setItem("cartpage",JSON.stringify(getCartItem));
-    window.location.reload();
-   }
-   document.querySelector("h1").innerText="Total Price is"+" "+totalPrice;
+
+    function deleteitem(index) {
+        getCartItem.splice(index, 1);
+        localStorage.setItem("cartpage", JSON.stringify(getCartItem));
+        window.location.reload();
+    }
+    document.querySelector("h1").innerText = "Total Price is" + " " + totalPrice;
 </script>
+
 </html>

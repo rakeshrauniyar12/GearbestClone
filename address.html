@@ -65,7 +65,7 @@
     <form action="">
         <div id="container">
             <div id="logo">
-                <a href="https://www.gearbest.com/"> <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="Error"></a>
+                <a href="index.html"> <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="Error"></a>
                 <hr>
             </div>
             <h1>Add New Address</h1>
@@ -78,7 +78,7 @@
                 <select name="country" id="country" class="ss">
                     <option value="">Choose Country</option>
                     <option value="india">India</option>
-                    <option value="Pakistan">Pakistan</option>
+                   
                     <!-- <option value="China">China</option>
                     <option value="Russia">Russia</option>
                     <option value="Nepal">Nepal</option> -->
@@ -91,6 +91,17 @@
                     <option value="">Goa</option>
                     <option value="">Maharashtra</option>
                     <option value="">Gujarat</option>
+                    <option value="">Bihar</option>
+                    <option value="">Up</option>
+                    <option value="">Haryana</option>
+                    <option value="">Jharkhanda</option>
+                    <option value="">Karnatka</option>
+                    <option value="">Kerala</option>
+                    <option value="">Madhya Pradesh</option>
+                    <option value="">Manipur</option>
+                    <option value="">Sikkim</option>
+                    <option value="">Tamil Nadu</option>
+                    <option value="">Punjab</option>
                    
                 </select><br><br>
                 <label>City:</label> <input type="text" id="city" required maxlength="20"><br><br>
@@ -148,11 +159,11 @@
 
             email: document.querySelector("#email").value,
         };
-       
+
         data.push(obj);
 
         localStorage.setItem("addressdata", JSON.stringify(data))
-window.location.href="payment.html";
+        window.location.href = "payment.html";
 
     }
 
