@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         body {
             background-color: #F2F2F2;
         }
@@ -25,16 +26,18 @@
             background-color: white;
             padding: 10px 0px 20px 10px;
         }
-        
-        #box1>div>div>:hover{
+
+        #box1>div>div>:hover {
             transform: scale(1.05);
             font-size: 15px;
             font-weight: 600;
             text-decoration: underline;
         }
-        #box1>:last-child>:hover{
+
+        #box1>:last-child>:hover {
             transform: scale(1.08);
         }
+
         #box1>div>div {
             display: flex;
             margin-left: 10px;
@@ -70,17 +73,19 @@
             padding-left: 825px;
             margin: 20px 0px;
         }
-        #box2>:hover{
+
+        #box2>:hover {
             transform: scale(1.05);
             font-weight: bold;
             background-color: #FFDA00;
         }
-        #box2>:first-child:hover{
+
+        #box2>:first-child:hover {
             transform: scale(1);
             background-color: transparent;
             font-weight: normal;
         }
-        
+
         #box2>button {
             font-size: 15px;
             border: transparent;
@@ -91,14 +96,15 @@
         #box3 {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            width:80%;
+            width: 80%;
             text-align: center;
             margin: auto;
             gap: 15px;
         }
-        #box3>:hover{
+
+        #box3>:hover {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            
+
         }
 
         #box3>div {
@@ -139,248 +145,294 @@
             background-color: #F30240;
         }
     </style>
-     <style>
-        html body{
+    <style>
+        html body {
             width: 100%;
             height: 100%;
         }
-        .left img{
-            width:250px;
+
+        .left img {
+            width: 250px;
             height: 50px;
         }
-        .container{
+
+        .container {
             margin: auto;
             margin-left: 30px;
             margin-top: 30px;
         }
-        
-        .box{
+
+        .box {
             display: flex;
             justify-content: space-between;
             width: 80%;
-    
+
         }
-        
-        form{
+
+        form {
             display: flex;
             width: 50%;
             height: 30px;
             border-radius: 15px;
-            border:1px solid yellow;
+            border: 1px solid yellow;
             padding-bottom: 6px;
             margin-bottom: 2px;
             margin-left: 100px;
         }
-        .sign{
+
+        .sign {
             display: flex;
             justify-content: space-around;
         }
-        .sign>img{
+
+        .sign>img {
             width: 30px;
             height: 30px;
             margin-left: 15px;
         }
-        .sign>img+p{
+
+        .sign>img+p {
             margin-top: 2px;
             margin-left: 15px;
             font-size: 14px;
         }
-        button{
+
+        button {
             width: 50px;
             height: 36px;
             background-color: yellow;
             outline: none;
             border: none;
             border-radius: 0px 10px 10px 0px;
-            
-            
+
+
         }
-       button img{
-        width: 18px;
-        padding-top: 10px;
-    
-       }
-     input{
-        width: 450px;
-        padding: 16px;
-        border: none;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        outline: none;
-       }
-       #filter{
-        width: 40px;
-        height: 30px;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        margin-top: 2px;
-        margin-left: 2px;
-        margin-right: -1px;
-        padding-bottom: 6px;
-       }
-       #tags{
-        margin-left: 50%;
-       }
-       #tags>img{
-        width: 12px;
-       }
-       #tags>select{
-        border: none;
-        outline: none;
-        font-size: 12px;
-        color:grey
-       }
-       #tags>select:hover{
-        background-color: antiquewhite;
-       }
-       #tags>option{
-        border: none;
-        outline: none;
-       }
+
+        button img {
+            width: 18px;
+            padding-top: 10px;
+
+        }
+
+        input {
+            width: 450px;
+            padding: 16px;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        #filter {
+            width: 40px;
+            height: 30px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-top: 2px;
+            margin-left: 2px;
+            margin-right: -1px;
+            padding-bottom: 6px;
+        }
+
+        #tags {
+            margin-left: 50%;
+        }
+
+        #tags>img {
+            width: 12px;
+        }
+
+        #tags>select {
+            border: none;
+            outline: none;
+            font-size: 12px;
+            color: grey
+        }
+
+        #tags>select:hover {
+            background-color: antiquewhite;
+        }
+
+        #tags>option {
+            border: none;
+            outline: none;
+        }
     </style>
     <style>
-        #footer{
-    background-color: #fafafa;
-    width: 97%;
-    display: flex;
-    margin-top: 40px;
-    margin-left: 30px;
-}
-.sub{
-  display: flex;
-  gap: 25px;
-  width: 80%;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  
-}
-.sub h3{
-  font-size: 16px;
-}
-.sub h4:hover{
-color: yellow;
-}
-.sub h4{
-  margin-top: -2px;
-}
-.sub p{
-  margin-top:-15px;
-  margin: auto;
-  font-size: 16px;
-}
-.sub>div>img{
-  width: 40px;
-  margin-left: 50px;
-}
-.sub>div>img:hover{
-background-color: yellow;
-}
-.sub>div:nth-child(1)>img{
-  width: 130px;
-}
-.news{
-  display: flex;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  justify-content: space-between;
-  width: 80%;
-}
+        #footer {
+            background-color: #fafafa;
+            width: 97%;
+            display: flex;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
 
-.news div{
-  display: flex;
-  column-gap: 10px;
-  
-}
-.news>div>input{
- border: 1px solid;
- width: 350px;
- height: 7px;
- border-radius: 0%;
- margin-right: -50px;
-}
-.news img{
-  width: 30px;
-  height: 30px;
-}
-.news button{
-  background-color: black;
-  color: white;
-  border-radius: 0%;
-  width: 90px;
-  height: 40px;
-  padding-bottom: 7px;
-  
-}
+        .sub {
+            display: flex;
+            gap: 25px;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 80px;
+            margin-bottom: 30px;
 
-#footer>div:nth-child(2){
-    margin-left: 150px;
-}
-#footer>div:nth-child(3){
-    margin-left: 150px;
-}
-#footer>div:nth-child(1)>p>a{
-    text-decoration: none;
-    color: black;
-}
-#footer>div:nth-child(1)>p>a:hover{
-    text-decoration: underline;
-    color: black;
-}
-#footer>div:nth-child(2)>p>a{
-    text-decoration: none;
-    color: black;
-}
-#footer>div:nth-child(2)>p>a:hover{
-    text-decoration: underline;
-    color: black;
-}
-#footer>div:nth-child(3)>p>a{
-    text-decoration: none;
-    color: black;
-}
-#footer>div:nth-child(3)>p>a:hover{
-    text-decoration: underline;
-    color: black;
-}
+        }
 
-#footer>div:nth-child(4)>p>a{
-  text-decoration: none;
-  color: black;
-}
-#footer>div:nth-child(4)>p+img{
-    width: 120px;
-}
-#footer>div:nth-child(4)>p>a:hover{
-  text-decoration: underline;
-  color: black;
-  font-weight: bold;
-}
-#footerimg{
-    width: 80%;
-    text-align: center;
-    background-color: #fafafa;
-    margin-left: 60px;
-    margin-top: 40px;
-}
-#footerimg>img{
-         
-       margin: 10px 10px 3px 10px;
-       height: 25px;
-}
+        .sub h3 {
+            font-size: 16px;
+        }
+
+        .sub h4:hover {
+            color: yellow;
+        }
+
+        .sub h4 {
+            margin-top: -2px;
+        }
+
+        .sub p {
+            margin-top: -15px;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        .sub>div>img {
+            width: 40px;
+            margin-left: 50px;
+        }
+
+        .sub>div>img:hover {
+            background-color: yellow;
+        }
+
+        .sub>div:nth-child(1)>img {
+            width: 130px;
+        }
+
+        .news {
+            display: flex;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .news div {
+            display: flex;
+            column-gap: 10px;
+
+        }
+
+        .news>div>input {
+            border: 1px solid;
+            width: 350px;
+            height: 7px;
+            border-radius: 0%;
+            margin-right: -50px;
+        }
+
+        .news img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .news button {
+            background-color: black;
+            color: white;
+            border-radius: 0%;
+            width: 90px;
+            height: 40px;
+            padding-bottom: 7px;
+
+        }
+
+        #footer>div:nth-child(2) {
+            margin-left: 150px;
+        }
+
+        #footer>div:nth-child(3) {
+            margin-left: 150px;
+        }
+
+        #footer>div:nth-child(1)>p>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer>div:nth-child(1)>p>a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #footer>div:nth-child(2)>p>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer>div:nth-child(2)>p>a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #footer>div:nth-child(3)>p>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer>div:nth-child(3)>p>a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #footer>div:nth-child(4) {
+            margin-left: 150px;
+        }
+
+        #footer>div:nth-child(4)>p>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer>div:nth-child(4)>div>img {
+            margin: 20px 0px;
+            width: 100px;
+        }
+
+        #footer>div:nth-child(4)>p>a:hover {
+            text-decoration: underline;
+            color: black;
+            font-weight: bold;
+        }
+
+        #footerimg {
+            width: 80%;
+            text-align: center;
+            background-color: #fafafa;
+            margin-left: 60px;
+            margin-top: 40px;
+        }
+
+        #footerimg>img {
+
+            margin: 10px 10px 3px 10px;
+            height: 25px;
+        }
     </style>
 </head>
+
 <body>
     <div id="tags">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAAD29vYREREnJyfDw8OAgIBAQEDPz8+fn58wMDAfHx9tbW23t7fJycm0tLTb29s2NjZoaGjw8PBLS0uXl5dUVFRjY2Pj4+ODg4OpqanZ2dkaGhr09PQgICBOTk4NDQ1sJLkwAAADEElEQVR4nO3Y7XKaUBSFYYJGggqK301s0/u/ymrsjLZC2lPW2szY9/2VYTLn7CckB0yW9WtZ7ovjk6tjsS8PPSfsVV6Obbhr4zIfCriI8H0YF8MAV0G+c6sBfOviZoBm5iYW63Dh5rr7/JB9rdzETTRwft1793GhvsxR15uOEfs2jwUubrauL5ea05ffTqde7vqNjT1uRjc7Ly+Xznf143a+m4SjSGB5u/Pz5dr50XE8nQfr0f1wk/YSiWWgsLnd+HIGXI6apqqa+9GqjmUW99/6WU0ccPnrzptDnr9+NlqXMPUAXoYJt4mTjSZf2pp8T1xnGyac/3kYS3EPjN1Awl0UMJ8OJJxGfcjIW54HIY0QIkSIECFChAjlwln9HFU9G0Q4Dtru3BihNoSGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihuP9GOKufo6pngwjjQ4gQYU/hsSmuNceHE+5fflvkZf9YwrJlmfKRhJPWdSYPJOxY6HGE7bcw/SbGCaeJk712LPSauM40SpjtEierOtapEtfZRQGzeeJkbSfpudTTdB4m3CZO1vWzT/1d2IYJl4mTPb21LvOWuswyTJg1iaMd246IPPXNrYkDpr+OTO/v4lvqidz552wp/b1tX73cVqW/lo4igdkieb7+LUKFyQ+M/sU9Kn62CQZuooHZuggFFutwYZatAoGrAXynFuMg3zj4kLmWlxHGcRn2kaKtZbkv/um/Sn/VsdiXh54T/gBkFzr+kZEXvAAAAABJRU5ErkJggg==" alt="">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAAD29vYREREnJyfDw8OAgIBAQEDPz8+fn58wMDAfHx9tbW23t7fJycm0tLTb29s2NjZoaGjw8PBLS0uXl5dUVFRjY2Pj4+ODg4OpqanZ2dkaGhr09PQgICBOTk4NDQ1sJLkwAAADEElEQVR4nO3Y7XKaUBSFYYJGggqK301s0/u/ymrsjLZC2lPW2szY9/2VYTLn7CckB0yW9WtZ7ovjk6tjsS8PPSfsVV6Obbhr4zIfCriI8H0YF8MAV0G+c6sBfOviZoBm5iYW63Dh5rr7/JB9rdzETTRwft1793GhvsxR15uOEfs2jwUubrauL5ea05ffTqde7vqNjT1uRjc7Ly+Xznf143a+m4SjSGB5u/Pz5dr50XE8nQfr0f1wk/YSiWWgsLnd+HIGXI6apqqa+9GqjmUW99/6WU0ccPnrzptDnr9+NlqXMPUAXoYJt4mTjSZf2pp8T1xnGyac/3kYS3EPjN1Awl0UMJ8OJJxGfcjIW54HIY0QIkSIECFChAjlwln9HFU9G0Q4Dtru3BihNoSGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihOISGEIpDaAihuP9GOKufo6pngwjjQ4gQYU/hsSmuNceHE+5fflvkZf9YwrJlmfKRhJPWdSYPJOxY6HGE7bcw/SbGCaeJk712LPSauM40SpjtEierOtapEtfZRQGzeeJkbSfpudTTdB4m3CZO1vWzT/1d2IYJl4mTPb21LvOWuswyTJg1iaMd246IPPXNrYkDpr+OTO/v4lvqidz552wp/b1tX73cVqW/lo4igdkieb7+LUKFyQ+M/sU9Kn62CQZuooHZuggFFutwYZatAoGrAXynFuMg3zj4kLmWlxHGcRn2kaKtZbkv/um/Sn/VsdiXh54T/gBkFzr+kZEXvAAAAABJRU5ErkJggg=="
+            alt="">
         <select name="saves" id="select">
             <option value="Save $3 with App">Save $3 with App</option>
         </select>
-        <select><option value="Support Center">Support Center</option></select>
+        <select>
+            <option value="Support Center">Support Center</option>
+        </select>
         <select>
             <option value="Ship to /USD">Ship to /USD</option>
         </select>
@@ -411,10 +463,11 @@ background-color: yellow;
     <header class="container">
         <nav class="box">
             <div class="left">
-                <img onClick="homepage()" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+                <img onClick="homepage()"
+                    src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
             </div>
             <form>
-                <select name="categary" id="filter" >
+                <select name="categary" id="filter">
                     <option value="All">All</option>
                     <option value="MARKETPLACES">MARKETPLACES</option>
                     <option value="Appliances">Appliances</option>
@@ -424,16 +477,19 @@ background-color: yellow;
                     <option value="Consumer & Electronic">Others</option>
                     <option value="Others">Others</option>
                 </select>
-             <input type="text" placeholder="Search Anything" name="q"/>
-             <a class="btn" href="#"><i class="fasfa-search"></i></a>
-             <button type="submit"><img src="https://img.icons8.com/ios-glyphs/2x/search.png"></button>
+                <input type="text" placeholder="Search Anything" name="q" />
+                <a class="btn" href="#"><i class="fasfa-search"></i></a>
+                <button type="submit"><img src="https://img.icons8.com/ios-glyphs/2x/search.png"></button>
             </form>
             <div class="sign">
-                <img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-cartoon-electronic-contact-icon-image_2292426.jpg" alt="">
+                <img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-cartoon-electronic-contact-icon-image_2292426.jpg"
+                    alt="">
                 <p><a href="signIn.html">SignIn</a></p>
-                <img src="data:image/png;base64,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" alt="">
+                <img src="data:image/png;base64,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"
+                    alt="">
                 <p>Favorites</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qZ9KgHw477yXCNswFvJfrZW9n-ygHPPV2Q&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qZ9KgHw477yXCNswFvJfrZW9n-ygHPPV2Q&usqp=CAU"
+                    alt="">
                 <p> <a href="cart.html">cart</a></p>
             </div>
         </nav>
@@ -473,54 +529,60 @@ background-color: yellow;
     <div id="products"></div>
     <hr>
     <div class="sub">
-      <div>
-        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
-        <h3>AFFORDABLE QUALITY FUN SHOPPING</h3>
-      </div>
-      <div>
-        <img src="https://www.pngfind.com/pngs/m/415-4155474_png-file-svg-bakery-shop-icon-png-transparent.png" alt="">
-        <h4>High Quality Selection</h4>
-        <p>Total product quility control for peace of mind</p>
-      </div>
-      <div>
-        <img src="https://cdn1.iconfinder.com/data/icons/online-shopping-outline-3/64/11-best_price-512.png" alt="">
-        <h4>Affordable Price</h4>
-        <p>Factory direct prices for maximum savings</p>
-      </div>
-      <div>
-        <img src="https://toppng.com/uploads/preview/truck-delivery-shipping-van-fast-package-comments-van-delivery-icon-11562992582vmkxdyznxs.png" alt="">
-        <h4>Express Shipping</h4>
-        <p>Factory reliable delivery from global warehouses</p>
-      </div>
-      <div>
-        <img src="https://toppng.com//public/uploads/preview/file-svg-transparent-star-icon-11563055585lnti7ukeko.png" alt="">
-        <h4>Worry-free After-sales</h4>
-        <p>Instant access to professional support</p>
-      </div>
+        <div>
+            <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+            <h3>AFFORDABLE QUALITY FUN SHOPPING</h3>
+        </div>
+        <div>
+            <img src="https://www.pngfind.com/pngs/m/415-4155474_png-file-svg-bakery-shop-icon-png-transparent.png"
+                alt="">
+            <h4>High Quality Selection</h4>
+            <p>Total product quility control for peace of mind</p>
+        </div>
+        <div>
+            <img src="https://cdn1.iconfinder.com/data/icons/online-shopping-outline-3/64/11-best_price-512.png" alt="">
+            <h4>Affordable Price</h4>
+            <p>Factory direct prices for maximum savings</p>
+        </div>
+        <div>
+            <img src="https://toppng.com/uploads/preview/truck-delivery-shipping-van-fast-package-comments-van-delivery-icon-11562992582vmkxdyznxs.png"
+                alt="">
+            <h4>Express Shipping</h4>
+            <p>Factory reliable delivery from global warehouses</p>
+        </div>
+        <div>
+            <img src="https://toppng.com//public/uploads/preview/file-svg-transparent-star-icon-11563055585lnti7ukeko.png"
+                alt="">
+            <h4>Worry-free After-sales</h4>
+            <p>Instant access to professional support</p>
+        </div>
     </div>
     <div class="news">
-      <div>
-        <h5>Newsletter</h5>
-        <input type="text" placeholder="Enter Email to get 50 Points"/>
-        <a class="btn" href="#"><i class="fasfa-search"></i></a>
-         <button>Subscribe</button>
-      </div>
-      <div>
-       <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Facebook%2BIcon%2BBlack.png" alt="">
-       <img src="https://image.similarpng.com/very-thumbnail/2021/01/Black-facebook-messenger-icon-on-transparent-background-PNG.png" alt="">
-       <img src="https://i.pinimg.com/originals/bd/51/0c/bd510c9c46e3c3a1388776dfb11f5ed9.png" alt="">
-       <img src="https://png.pngtree.com/element_our/md/20180626/md_5b321fcda2483.jpg" alt="">
-       <img src=" https://cdn.icon-icons.com/icons2/2428/PNG/512/vk_black_logo_icon_147058.png"alt="">
-       <img src="https://i.pinimg.com/474x/76/64/71/766471f5b33e5441daa0d4ab7d66367e.jpg" alt="">
-       <img src="https://www.nicepng.com/png/detail/232-2326770_icon-blogger-logo-now-creative-group-logo.png" alt="">
-       <img src="https://www.freeiconspng.com/thumbs/tumblr-logo-icon/black-circle-tumblr-logo-icon-20.png" alt="">
-       <img src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png" alt="">
-    </div>
+        <div>
+            <h5>Newsletter</h5>
+            <input type="text" placeholder="Enter Email to get 50 Points" />
+            <a class="btn" href="#"><i class="fasfa-search"></i></a>
+            <button>Subscribe</button>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Facebook%2BIcon%2BBlack.png" alt="">
+            <img src="https://image.similarpng.com/very-thumbnail/2021/01/Black-facebook-messenger-icon-on-transparent-background-PNG.png"
+                alt="">
+            <img src="https://i.pinimg.com/originals/bd/51/0c/bd510c9c46e3c3a1388776dfb11f5ed9.png" alt="">
+            <img src="https://png.pngtree.com/element_our/md/20180626/md_5b321fcda2483.jpg" alt="">
+            <img src=" https://cdn.icon-icons.com/icons2/2428/PNG/512/vk_black_logo_icon_147058.png" alt="">
+            <img src="https://i.pinimg.com/474x/76/64/71/766471f5b33e5441daa0d4ab7d66367e.jpg" alt="">
+            <img src="https://www.nicepng.com/png/detail/232-2326770_icon-blogger-logo-now-creative-group-logo.png"
+                alt="">
+            <img src="https://www.freeiconspng.com/thumbs/tumblr-logo-icon/black-circle-tumblr-logo-icon-20.png" alt="">
+            <img src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png"
+                alt="">
+        </div>
     </div>
     <div id="footer">
         <div>
             <h3>Company Information</h3>
-           <p><a href="#">About Us</a></p>
+            <p><a href="#">About Us</a></p>
             <p><a href="#">Top Searches</a></p>
             <p><a href="#">Privacy Policy</a></p>
             <p><a href="#">Terms & Condition</a></p>
@@ -546,7 +608,7 @@ background-color: yellow;
             <p><a href="#">Site Map</a></p>
             <p><a href="#">Gearbest Wallet Instruction</a></p>
             <p><a href="#">FAQs about corona</a></p>
-    
+
         </div>
         <div>
             <h3>Other Business</h3>
@@ -561,7 +623,7 @@ background-color: yellow;
                 <img src="https://png.pngitem.com/pimgs/s/162-1628686_triangle-hd-png-download.png" alt="">
             </div>
         </div>
-       
+
     </div>
     <div>
         <div id="footerimg">
@@ -589,7 +651,7 @@ background-color: yellow;
             <img src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png" alt="">
             <img src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png" alt="">
         </div>
-        </div>
+    </div>
 
 </body>
 
@@ -781,43 +843,43 @@ background-color: yellow;
         }
     ]
 
-    function homepage(){
-        window.location.href="index.html"
+    function homepage() {
+        window.location.href = "index.html"
     }
-     let cartLS=JSON.parse(localStorage.getItem("cartpage")) || [];
+    let cartLS = JSON.parse(localStorage.getItem("cartpage")) || [];
 
-     function displayProducts(appData1){
-         appData1.forEach(function(element){
-         let product=document.createElement("div");
-         let img = document.createElement("img");
-         img.setAttribute("src", element.img);
-        let para = document.createElement("p");
-        para.innerText = element.para;
-        let appPrice = document.createElement("h2");
-        appPrice.innerText = element.appPrice;
-        let price = document.createElement("h3");
-        price.innerText = element.price;
-        let addToCart = document.createElement("button");
-        addToCart.innerText = "Add To Cart"
-        addToCart.addEventListener("click",function(){
-           
-        if(addToCartFunc(element.para)===true){
-            
-            alert("Product Added Successfully");
-            cartLS.push(element);
-                localStorage.setItem("cartpage",JSON.stringify(cartLS));
-        }else{
-                alert("Product Already In The Cart");
-            }
- })
-           product.append(img,para,appPrice,price,addToCart)
+    function displayProducts(appData1) {
+        appData1.forEach(function (element) {
+            let product = document.createElement("div");
+            let img = document.createElement("img");
+            img.setAttribute("src", element.img);
+            let para = document.createElement("p");
+            para.innerText = element.para;
+            let appPrice = document.createElement("h2");
+            appPrice.innerText = element.appPrice;
+            let price = document.createElement("h3");
+            price.innerText = element.price;
+            let addToCart = document.createElement("button");
+            addToCart.innerText = "Add To Cart"
+            addToCart.addEventListener("click", function () {
+
+                if (addToCartFunc(element.para) === true) {
+
+                    alert("Product Added Successfully");
+                    cartLS.push(element);
+                    localStorage.setItem("cartpage", JSON.stringify(cartLS));
+                } else {
+                    alert("Product Already In The Cart");
+                }
+            })
+            product.append(img, para, appPrice, price, addToCart)
             document.querySelector("#box3").append(product)
-         })
-     }
-     displayProducts(appData1);
-    function addToCartFunc(ele){
-        for(let i=0;i<cartLS.length;i++){
-            if(cartLS[i].para==ele){
+        })
+    }
+    displayProducts(appData1);
+    function addToCartFunc(ele) {
+        for (let i = 0; i < cartLS.length; i++) {
+            if (cartLS[i].para == ele) {
                 return false;
             }
         }
