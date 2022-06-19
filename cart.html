@@ -25,6 +25,13 @@
         </select>
     </div>
 </div>
+    <div>
+    <select style="margin-left:20px;" onChange="cartSelect()" id="cartselect1">
+    <option value="All">All</option>
+    <option value="Ascending">Ascending</option>
+    <option value="Descending">Descending</option>
+</select>
+</div>
     <h1 id="cartprice"></h1>
     <div id="cartselect">
         <div>
@@ -40,16 +47,35 @@
     <button id="addbutton"><h1>Check Out</h1></button>
 </body>
 <script>
+     let getCartItem=JSON.parse(localStorage.getItem("cartpage"));
+      function cartSelect(){
+     let Selected=document.querySelector("#cartselect1").value;
+     if(Selected=="All"){
+        displayCartItem(getCartItem)
+     }
+     if(Selected=="Ascending"){
+        getCartItem.sort(function(a,b){
+            return a.price-b.price;
+            })
+        displayCartItem(getCartItem)
+    }
+    if(Selected=="Descending"){
+        getCartItem.sort(function(a,b){
+            return b.price-a.price;
+            })
+        displayCartItem(getCartItem)
+    }
+    }
     let btn=document.querySelector("#addbutton").addEventListener("click",function(){
        window.location.href="address.html";
     })
     function Homepage(){
         window.location.href="index.html";
     }
-    let getCartItem=JSON.parse(localStorage.getItem("cartpage"));
     let totalPrice=0;
     displayCartItem(getCartItem)
         function displayCartItem(getCartItem){
+            document.querySelector("#addtocart").innerhtml="";
             totalPrice=0;
         getCartItem.forEach(function(el,index){
             totalPrice += Number(el.price);
