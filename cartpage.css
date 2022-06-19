@@ -1,10 +1,114 @@
+body{
+    background-color: #f2f2f2;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
-#table{
-    border: 5px solid red;
+#cartselect{
+    border: 2px solid rgb(244, 240, 240);
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 20px;
+    margin-right: 18px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+   
 }
-#thead>th{
-    border: 1px solid blue;
+#cartselect>div{
+        padding: 20px 20px;
+}
+#cartselect>div>p{
+    color: grey;
+}
+#space{
+    display: flex;
+    justify-content: space-around;
+   
+}
+#addtocart{
+    margin-top: 20px;
+    width: 97%;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    /* justify-content: space-evenly; */
+}
+#addtocart>#product{
+    display: flex;
+}
+#ctnav>div:nth-child(1)>img{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+#ctnav{
+    border: 1px solid white;
+    background-color: white;
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    justify-items: space-between;
+}
+#ctnav>div:nth-child(2)>select{
+    height: 30px;
+   
+    border: none;
+}
+#ctnav>div:nth-child(2)>p{
+    padding: 5px 0px;
+}
+#ctnav>div:nth-child(2)>img{
+    height: 15px;
+    padding: 4px 5px;
+   
+}
+#ctnav>div:nth-child(2){
+    margin: 20px 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+#cartprice{
+    text-decoration: underline;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 60px;
+}
+#addtocart>#product>img{
+    height: 110px;
+    padding: 40px 40px;
+}
+#addtocart>#product>p{
+    padding-top: 40px;
+}
+#addtocart>#product1{
+    display: flex;
+}
+#addtocart>#product1>p{
+   
+   padding-left: 134px;
+   padding-top: 50px;
+}
+#addtocart>#product1>p+p{
+    padding-left: 240px;
+    padding-top: 50px;
+}
+#addbutton{
+    border-radius: 5px;
+    background-color: aqua;
+    margin-left: 1070px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#addbutton>h1{
+    padding: 10px 20px;
 }

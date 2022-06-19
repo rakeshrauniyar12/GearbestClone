@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <style>
+      body{
+            background-image: url(https://getwallpapers.com/wallpaper/full/0/b/b/489788.jpg);
+        }
         h1{
             width: 30%;
             margin: auto;
@@ -18,7 +21,7 @@
            display: grid;
            justify-content: flex-end;
             margin: auto;
-            background-color: white;
+            background-color: rgb(134, 212, 249);
             margin-left: 760px;
             margin-top: 70px;
             margin-bottom: 40px;
@@ -29,12 +32,12 @@
             border-radius: 5px;
             display: block;
             margin:10px 30px 20px 20px;
-            
             width: 83%;
             padding: 15px 15px 15px 15px;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
         }
          p+input{
+           
             width: 90%;
             border: 1px solid black;
             padding: 15px 0px 15px 0px;
@@ -84,7 +87,7 @@
 </head>
 <body>
    <div id="img">
-    <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+    <img onclick="Homepage()" style="cursor: pointer;" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
    </div>
    <div id="end">
     <form id="form">
@@ -96,8 +99,8 @@
         <label for="">Password</label>
         <input id="password" type="number" placeholder="Enter Your Password"/>
         <p>By signing up, I accept all <a href="file:///C:/Users/Abhinandan/OneDrive/Desktop/Abhinandan_fw19_0048/unit-2/sprint-4/day-1/assignments/signupPage.html?">terms of service</a> and acknowledge the <a href="file:///C:/Users/Abhinandan/OneDrive/Desktop/Abhinandan_fw19_0048/unit-2/sprint-4/day-1/assignments/signupPage.html?">Privacy Policy</a></p>
-        <input type="submit" value="SIGN UP"/>
-        <p>Already have an account? <a href="signIn.html">Sign In</a></p>
+        <input type="submit" value="Sign Up"/>
+       <p>Already Have an account? <a href="signIn.html">Sign In</a></p>
     </form>
 </div>
 <div id="footerimg">
@@ -113,20 +116,41 @@
 </div>  
 </body>
 <script>
-    document.querySelector("form").addEventListener("submit",userData);
-  let arr=JSON.parse(localStorage.getItem("userData"))||[];
-  function userData(event){
+    
+    let arr=JSON.parse(localStorage.getItem("userData"))||[];
+  
+  document.querySelector("form").addEventListener("submit",function(){
+ 
     event.preventDefault()
-    alert("You are successfully Sign Up, Please Sign In");
     let obj={
     email: document.querySelector("#email").value,
     Number: document.querySelector("#number").value,
     password: document.querySelector("#password").value
   }
-  arr.push(obj);
-   localStorage.setItem("userData",JSON.stringify(arr));
+  
+  if(checksignupcredential(obj.email)===true){
+    alert("You are Successfully Signup");
+      arr.push(obj);
+      localStorage.setItem("userData",JSON.stringify(arr));
+      window.location.href="signIn.html";
+  } else {
+    alert("Your account is already exist")
   }
   
- 
+  })
+  
+   function checksignupcredential(email){
+     let filtered=arr.filter(function(el){
+     return email===el.email
+     })
+     if(filtered.length>0){
+        return false;
+     } else {
+        return true;
+     }
+   }
+   function Homepage(){
+        window.location.href="homepage.html";
+    }
 </script>
 </html>
