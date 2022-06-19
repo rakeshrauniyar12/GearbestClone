@@ -41,6 +41,7 @@
 
         #box1>div>div>p {
             margin-right: 40px;
+            margin-bottom: 40px;
         }
 
         #box1>div+div {
@@ -266,6 +267,7 @@ color: yellow;
 }
 .sub p{
   margin-top:-15px;
+  margin: auto;
   font-size: 16px;
 }
 .sub>div>img{
@@ -775,7 +777,10 @@ background-color: yellow;
             appPrice: "📱$36.58",
             price: "$36.99",
         }
-    ]
+    ];
+    function Homepage(){
+        window.location.href="index.html";
+    }
 
     
      let cartLS=JSON.parse(localStorage.getItem("cart-page")) || [];
