@@ -44,7 +44,7 @@
        window.location.href="address.html";
     })
     function Homepage(){
-        window.location.href="homepage.html";
+        window.location.href="index.html";
     }
     let getCartItem=JSON.parse(localStorage.getItem("cartpage"));
     let totalPrice=0;
@@ -85,5 +85,6 @@
     window.location.reload();
    }
    document.querySelector("h1").innerText="Total Price is"+" "+totalPrice;
+   document.querySelector("h1").style.toFixed(2);
 </script>
 </html>

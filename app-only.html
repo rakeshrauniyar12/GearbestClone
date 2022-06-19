@@ -25,6 +25,7 @@
             background-color: white;
             padding: 10px 0px 20px 10px;
         }
+        
         #box1>div>div>:hover{
             transform: scale(1.05);
             font-size: 15px;
@@ -41,6 +42,7 @@
 
         #box1>div>div>p {
             margin-right: 40px;
+            margin-bottom: 40px;
         }
 
         #box1>div+div {
@@ -254,6 +256,7 @@
   margin: auto;
   margin-top: 80px;
   margin-bottom: 30px;
+  
 }
 .sub h3{
   font-size: 16px;
@@ -266,6 +269,7 @@ color: yellow;
 }
 .sub p{
   margin-top:-15px;
+  margin: auto;
   font-size: 16px;
 }
 .sub>div>img{
@@ -407,7 +411,7 @@ background-color: yellow;
     <header class="container">
         <nav class="box">
             <div class="left">
-                <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+                <img onClick="homepage()" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
             </div>
             <form>
                 <select name="categary" id="filter" >
@@ -430,7 +434,7 @@ background-color: yellow;
                 <img src="data:image/png;base64,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" alt="">
                 <p>Favorites</p>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qZ9KgHw477yXCNswFvJfrZW9n-ygHPPV2Q&usqp=CAU" alt="">
-                <p>Cart</p>
+                <p> <a href="cart.html">cart</a></p>
             </div>
         </nav>
     </header>
@@ -596,189 +600,191 @@ background-color: yellow;
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v1/7d9a6e744268.jpg",
             para: "Global Xiaomi Mi TV Box S 4K HDR Android TV 8.1 Ultra HD 2G 8G WIFI Google Cast Netflix IPTV Set top Box 4 Media Player - China EU Plug Black",
-            appPrice: "📱$66.99",
-            price: "$67.99",
+            appPrice: "📱66.99",
+            price: "67.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16457/goods_thumb_220-v3/4d69d717ab50.jpg",
             para: "Xiaomi WOWSTICK 1F+ Electric Precision Screwdriver Kit Rechargeable Cordless Power Screw Driver with LED Light for Repairing Work - Grey",
-            appPrice: "📱$36.88",
-            price: "$36.99",
+            appPrice: "📱36.88",
+            price: "36.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16414/goods_thumb_220-v1/e1c76b337a79.jpg",
             para: "Original Xiaomi Mi Band 6 / 6 NFC Smart Wristband 1.56 inch AMOLED Screen Blood Oxygen Fitness Traker Bluetooth Waterproof Smart Bracelet - No Accessories Mi Band 6",
-            appPrice: "📱$38.89",
-            price: "$38.99",
+            appPrice: "📱38.89",
+            price: "38.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_thumb_220-v4/ad2a20a94177.jpg",
             para: "ASLING Luminous Series One-Cable Three Purpose USB TO MTL Flowing Light Magnetic Charging Cable - Blue 1m",
-            appPrice: "📱$7.69",
-            price: "$7.99",
+            appPrice: "📱7.69",
+            price: "7.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16383/goods_thumb_220-v1/25dc9b7eebc0.jpg",
             para: "YUKUI LED Electric Sonic Dental Calculus Scaler Oral Teeth Tartar Remover Plaque Stains Cleaner Removal Teeth Whitening Portable - 2",
-            appPrice: "📱$41.07",
-            price: "$41.59",
+            appPrice: "📱41.07",
+            price: "41.59",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6771730315905003520/16419/goods_thumb_220-v1/a2fbd39cb9c5.jpg",
             para: "2.4Ghz 6 Channel 124 RC Excavator toy RC Engineering Car Alloy and plastic Excavator RTR For kids Christmas gift - With battery SPAIN",
-            appPrice: "📱$35.16",
-            price: "$35.58",
+            appPrice: "📱35.16",
+            price: "35.58",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878388619120406528/16464/goods_thumb_220-v2/134ae8309154.jpg",
             para: "original Xiaomi Mi Robot Vacuum Cleaner Main Brushes Replacement Parts - China Red 1 pcs",
-            appPrice: "📱$14.98",
-            price: "$14.99",
+            appPrice: "📱14.98",
+            price: "14.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16475/goods_thumb_220-v1/74b8450aa656.jpg",
             para: "500X25 50000M Portable Zoom HD Professional Powerful Binoculars Long Range Monocular Telescope Low Night Vision Hunting Tourism - 300X25",
-            appPrice: "📱$29.94",
-            price: "$29.99",
+            appPrice: "📱29.94",
+            price: "29.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v3/b5bb5866c021.jpg",
             para: "Original Xiaomi Backpack 7L/10L/15L/20L Travel Light Weight Small Size Backpack Unisex Urban Casual Sports Chest Pack Bags - Black China 15L",
-            appPrice: "📱$11.59",
-            price: "$11.99",
+            appPrice: "📱11.59",
+            price: "11.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883469851634102272/16497/goods_thumb_220-v1/8b6485baad75.jpg",
             para: "E21 Smart Sports Couple Watch Heart Rate Blood Pressure Detection Healthy Sleep Monitoring Photo Sedentary Reminder GPS Positioning Waterproof - Blue China",
-            appPrice: "📱$42.40",
-            price: "$42.93",
+            appPrice: "📱42.40",
+            price: "42.93",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_thumb_220-v5/d80e56d8f6d2.jpg",
             para: "Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell Phone Unlocked 2022 5G Mobile Phones Cheap Android Xaiomi Telephone Xiomi - Blue 8G 256GB",
-            appPrice: "📱$98.00",
-            price: "$98.50",
+            appPrice: "📱98.00",
+            price: "98.50",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_thumb_220-v3/31d0d9d6c843.jpg",
             para: "A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision Wireless Remote Monitor Mini Camera - Black - China Black",
-            appPrice: "📱$10.67",
-            price: "$10.68",
+            appPrice: "📱10.67",
+            price: "10.68",
         },
 
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16472/goods_thumb_220-v2/a50fc3341fef.jpg",
             para: "M11 Ultra Smartphone 16GB+1TB 24+48MP Global Version Android Mobile Phone HD Camera Celular 5G Network Unlocked Cellphones - Gold 12GB256GB",
-            appPrice: "📱$113.50",
-            price: "$114.00",
+            appPrice: "📱113.50",
+            price: "114.00",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v1/126354806df6.jpg",
             para: "Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen For Office Signing Pens Smooth Switzerland Refill Mikuni For School Pen - Black China 1 PCS",
-            appPrice: "📱$2.39",
-            price: "$2.59",
+            appPrice: "📱2.39",
+            price: "2.59",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16416/goods_thumb_220-v1/9dbf47dbe530.jpg",
             para: "A9 Mini Camera WiFi Camera 1080P HD Night Version Voice Recorder Wireless Mini Camcorders Video Surveillance IP Camera - A9 with 32G TF Card China",
-            appPrice: "📱$15.80",
-            price: "$15.90",
+            appPrice: "📱15.80",
+            price: "15.90",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16414/goods_thumb_220-v1/5f26bc001550.jpg",
             para: "Original Xiaomi Redmi Buds 3 Lite Youth Edition Earphone TWS Wireless Bluetooth 5.2 IP54 Headphone Gaming Headset Touch Control Earbuds With Mic - Black",
-            appPrice: "📱$15.66",
-            price: "$15.80",
+            appPrice: "📱15.66",
+            price: "15.80",
         },
 
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16486/goods_thumb_220-v1/965097e8a620.jpg",
             para: "Aqara Smart Temperature Humidity Sensor Zigbee Wireless Connection Thermometer Hygrometer Apple Homekit Mi Home APP Control Xiaomi Ecosystem Product - White",
-            appPrice: "📱$17.96",
-            price: "$17.99",
+            appPrice: "📱17.96",
+            price: "17.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v3/c00a854704ea.jpg",
             para: "Original Xiaomi Backpack 7L/10L/15L/20L Travel Light Weight Small Size Backpack Unisex Urban Casual Sports Chest Pack Bags - Orange gray China 7L",
-            appPrice: "📱$7.59",
-            price: "$7.99",
+            appPrice: "📱7.59",
+            price: "7.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_thumb_220-v1/8fc8853ff3b3.jpg",
             para: "Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2 Earphone In Ear Stereo Bass Earphone Ture Wireless Earbuds Redmi Airdots3 - Blue China",
-            appPrice: "📱$19.59",
-            price: "$19.99",
+            appPrice: "📱19.59",
+            price: "19.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6615272824267153408/16121/goods_thumb_220-v9/ca5568a2f175.jpg",
             para: "Xiaomi Mi Piston 3 Type C Earphone USB-C in Ear Earbuds for Mi 9 Pro 5G 8 SE Lite 6 6X A2 5 5S Plus 4S MIX 2s 3 MAX 2 3 Note 2 3 - Black",
-            appPrice: "📱$7.55",
-            price: "$7.99",
+            appPrice: "📱7.55",
+            price: "7.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16488/goods_thumb_220-v3/d238ad6a3d2a.jpg",
             para: "2022 New Smartphone 7.3 Inch MIX4 72MP Camera Unlock Mobile Phones Celular Cellphone Qualcomm 888+ - Black 4GB 128GB",
-            appPrice: "📱$114.07",
+            appPrice: "📱114.07",
             price: "$114.30",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16473/goods_thumb_220-v1/3e2644b48740.jpg",
             para: "Mobile Phone Nova8 Pro 12GB+512GB 7.1Inch Face ID 6800mAh Dual SIM Android11 Cellphone unlocked 4G 5G 32MP+64MP Smartphones - Gold 12GB 512GB",
-            appPrice: "📱$106.00",
-            price: "$106.50",
+            appPrice: "📱106.00",
+            price: "106.50",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16472/goods_thumb_220-v1/899d01a1c192.jpg",
             para: "Celutares Smartphone X3Pro 5G 5 inch Android12 5600mAh Cellphone 16GB 512 GB Unlock Global Version Mobile Phone - Gold 16GB 512GB",
-            appPrice: "📱$79.84",
-            price: "$160.00",
+            appPrice: "📱79.84",
+            price: "160.00",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16453/goods_thumb_220-v2/677443d1848e.jpg",
             para: "Massage Gun Deep Tissue Percussion Mini LCD 32 Speeds Muscle Massager Pain Relief Body Relax Fitness - Black China",
-            appPrice: "📱$36.70",
-            price: "$36.90",
+            appPrice: "📱36.70",
+            price: "36.90",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16462/goods_thumb_220-v1/7c273533f25e.jpg",
             para: "Xiaomi Mijia Hair Clipper 2200mAh Men Women Profesional Hair Trimmer Haircut Shaving Shaver Cutting Machine Washable Ceramic Cutter Head - Black",
-            appPrice: "📱$36.96",
-            price: "$36.99",
+            appPrice: "📱36.96",
+            price: "36.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_thumb_220-v1/bc439edfaed5.jpg",
             para: "Xiaomi Redmi Airdots S Earphone Tws Wireless inear Bluetooth Gaming Headset Airdots S With Mic - Black Add Black Case China",
-            appPrice: "📱$10.99",
-            price: "$11.59",
+            appPrice: "📱10.99",
+            price: "11.59",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16403/goods_thumb_220-v1/167be3e01d5c.jpg",
             para: "KERNUAP SunPower Folding 10W Solar Cells Charger 5V 2.1A USB Output Devices Portable Solar Panels for Smartphones - 4 solar panels China",
-            appPrice: "📱$25.46",
-            price: "$25.57",
+            appPrice: "📱25.46",
+            price: "25.57",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16475/goods_thumb_220-v1/fd23536d132d.jpg",
             para: "2022 New K101 Max Mini RC Drone With Dual 4K HD Camera Optical Flow Obstacle Avoidance Quadcopter Helicopter Toys Gifts - White with 1 battery",
-            appPrice: "📱$37.57",
-            price: "$37.99",
+            appPrice: "📱37.57",
+            price: "37.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16455/goods_thumb_220-v1/3c536da9f15f.jpg",
             para: "Xiaomi Redmi AX6S Wireless Router 3200 Mbps Mesh WIFI 6 2.4G / 5G Dual-Frequency 256MB OFDMA 6 Antennas Repeater PPPOE - Add EU Plug",
-            appPrice: "📱$72.88",
-            price: "$72.99",
+            appPrice: "📱72.88",
+            price: "72.99",
         },
         {
             img: "https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16513/goods_thumb_220-v1/e198e1605f41.jpg",
             para: "P8 Mini Drone with 4K Dual Camera Wifi FPV 4 Sides Infrared Obstacle Avoidance RC Quadcopter Helicopter Toys - Black with 1 Battery",
-            appPrice: "📱$36.58",
-            price: "$36.99",
+            appPrice: "📱36.58",
+            price: "36.99",
         }
     ]
 
-    
-     let cartLS=JSON.parse(localStorage.getItem("cart-page")) || [];
+    function homepage(){
+        window.location.href="index.html"
+    }
+     let cartLS=JSON.parse(localStorage.getItem("cartpage")) || [];
 
      function displayProducts(appData1){
          appData1.forEach(function(element){
@@ -794,12 +800,12 @@ background-color: yellow;
         let addToCart = document.createElement("button");
         addToCart.innerText = "Add To Cart"
         addToCart.addEventListener("click",function(){
-           window.location.href="cart.html"
+           
         if(addToCartFunc(element.para)===true){
             
             alert("Product Added Successfully");
             cartLS.push(element);
-                localStorage.setItem("cart-page",JSON.stringify(cartLS));
+                localStorage.setItem("cartpage",JSON.stringify(cartLS));
         }else{
                 alert("Product Already In The Cart");
             }
