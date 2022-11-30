@@ -1,4 +1,4 @@
-# Gearbeast.com, is an e-Commerce website here we shop electronics products
+# Gearbeast.com, is an e-Commerce website here we shop electronics products.
 https://hilarious-ganache-c9d651.netlify.app
 
 <h3>LandingPage</h3>
