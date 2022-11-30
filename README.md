@@ -3,7 +3,7 @@ https://hilarious-ganache-c9d651.netlify.app
 
 <h3>LandingPage</h3>
 
-![homep](https://user-images.githubusercontent.com/105915562/204571064-f6787756-b960-4b88-8b09-6c86574402c9.png)
+![homep](https://user-images.githubusercontent.com/103803319/204720271-10a2dc5c-f1c6-4d2f-b19b-a0d5126d4e7b.png)
 
 <hr>
 
